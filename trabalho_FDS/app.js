@@ -1,5 +1,5 @@
 let bt = document.querySelector('#bt');
-let msg = document.querySelector('#msg')
+//let msg = document.querySelector('#msg')
 
 bt.addEventListener('click', () => {
     saudacao();
