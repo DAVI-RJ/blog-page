@@ -102,6 +102,9 @@ table td{
     padding: 5px;
     margin: 10px;    
 }
+.terceiroParagrafo a:hover{
+    color: red;
+}
 /*esse são os codigos do primeira pagina login, referente o botão, mensagem da pagina1 */
 .visitante{
     font-family: Impact, 'Arial Bold', sans-serif;
