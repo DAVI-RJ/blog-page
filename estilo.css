@@ -1,0 +1,154 @@
+/*deixei um body apenas, para manter o disgner. as cores remetem a natureza da cidade*/
+body{
+    background-color: rgb(176, 141, 99);
+    padding: 0%;
+    margin: 0%;
+}
+/*o css da pagina1 começa aqui*/
+header{
+    width: 95%;
+    height: 50px;
+    position: fixed;
+    background-color: #97dbfd;
+    color:rgb(176, 141, 99);
+    justify-items: center;
+    align-items: center;
+    margin: 0 50px;
+    z-index: 1;
+}
+/*zerei o espaçamento do h1*/
+#h1{
+    margin: 0%;
+}
+/*meu fundo para destacar o verde*/
+#fundo{
+    position: absolute;
+    width: 95%;
+    background-color: rgb(164, 212, 164);
+    margin: 50px 50px;
+}
+.primeiroParagrafo{
+    text-align: justify;
+    margin: 0 10px;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+}
+/*deixei algums css da msg aqui para seguir a ordem das class*/
+.lista{
+    padding: 10px;
+    margin: 20px;
+}
+li{
+    padding: 10px;
+    font-size: 20px;
+}
+/*imagens dos meus hobbis*/
+.imagemHobbis{
+    margin: 10px;
+    display: flex;  
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 200px;
+}
+.imagemHobbis img {
+    content: unset;
+    border-radius: 50px 100px 50px 100px;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+.segundoParagrafo{
+    text-align: justify;
+    font-size: 20px;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+/*difinir alguns parametros para tabela como bg, font, linhas da estrutura*/
+table{
+    text-align: justify;
+    background-image: url(img/terra_e_avião.jpg);
+    background-size: cover;
+    justify-content: space-between;
+    margin:20px;
+    font-size: 20px;
+    color: white;
+    border: solid black 2px;
+    width: 400px;
+    height: 400px;
+}
+#imagemPaises img{
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+}
+table tr{
+    border: solid black 2px;
+}
+table td{
+    border: solid black 2px;
+}
+.terceiroParagrafo{
+    text-align: justify;
+    font-size: 20px;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;    
+}
+.terceiroParagrafo a:hover{
+    color: red;
+}
+/*esse são os codigos do primeira pagina login, referente o botão, mensagem da pagina1 */
+.visitante{
+    font-family: Impact, 'Arial Bold', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: content;
+    font-size: 20px;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(240, 163, 70);
+    border-radius: 50px 50px ;
+}
+.visitante p{
+    padding: 40px;
+    font-size: 15px;
+    transition: 2s;
+}
+.visitante p:hover {
+    font-size: 30px;
+}
+input{
+    border-radius: 10px;
+    border: solid black 2px;
+}
+button{
+    font-family: Impact, Haettenschweiler;
+    background-color: rgb(176, 141, 99);
+    border-radius: 20px ;
+    border: solid black 2px;
+}
+button:hover{
+    background-color: green;
+}
+/*esse sao os ID utilizado no JavaScript*/ 
+#msg{
+    text-align: justify;
+    justify-items: center;
+    align-items: center;
+    display: block;    
+    border: solid black 2x;
+    color: rgb(176, 141, 99);
+    background-color: green;
+    font-size: 25px;
+}
+#bt{
+    text-align: justify;
+    font-size: 20px;
+}
+#nome{
+    font-size: 20PX;
+}
