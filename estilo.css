@@ -49,15 +49,13 @@ li{
     display: flex;  
     align-items: center;
     justify-items: center;
-    width: 100%;
-    height: 200px;
 }
 .imagemHobbis img {
     content: unset;
     border-radius: 50px 100px 50px 100px;
     padding: 10px;
-    width: 200px;
-    height: 100px;
+    width: 20vw;
+    height: 20vh;
 }
 .segundoParagrafo{
     text-align: justify;
@@ -76,13 +74,13 @@ table{
     font-size: 20px;
     color: white;
     border: solid black 2px;
-    width: 400px;
-    height: 400px;
+    width: 40vw;
+    height: 40vh;
 }
 #imagemPaises img{
     padding: 10px;
-    width: 150px;
-    height: 100px;
+    width: 20vh;
+    height: 20vh;
 }
 table tr{
     border: solid black 2px;
