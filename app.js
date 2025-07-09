@@ -8,8 +8,8 @@ bt.addEventListener('click', saudacao );
             if(nome === "")
                 alert ('digite um nome');        
             else {
-                msg.innerHTML = valorInput+", "+'seja bem-vindo';
+                msg.innerHTML = valorInput+", "+'site em manutenção, em breve estará pronto!';
                 setTimeout(() => msg.remove(),2000);
-                setTimeout(() =>{window.location.href = "pagina1.html"}, 2000);                                      
+                setTimeout(() =>{window.location.href = " "}, 2000);                                      
         }   
     };
