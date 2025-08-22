@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <script defer href="app.js"></script>
+    <script src="app.js"></script>
     <title>Trabalho FDS</title>
 </head>
 <body>
-<!--Aqui deixei um botao com javascript conforme pedido no materia onde o visitante clica e aparece a saudação-->
     <div class="visitante">
         <p>Digite seu nome abaixo para prosseguir</p><br>
-
-        <div>Nome: <input type="text" id="nome" pattern="[A-Za-z]"></div><br>
-<!--botao para o usuario clicar e aparecer uma mensagem abaixo do botao-->
+        <form action=""></form>
+            <label name="nome"></label>
+            <input type="text" id="nome" pattern="[A-Za-z]">
+        </form>
+        <br>
         <button id="bt">"Clique para ver uma mensagem!".</button>
-<!--essa e a minha mensagem com a função js saudação do app.js-->
         <div class="frase">
-            <div id="msg"></div>
-            <script src="app.js"></script>
+          <script src="app.js"></script>
         </div>          
         
     </div>

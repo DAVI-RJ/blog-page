@@ -1,0 +1,8 @@
+:root{
+  --cor-primaria: blue;
+  --cor-segundaria: blue;
+  --font-tamanho: 16px;
+  --width-value: 100vw;
+  --width-value-group: 50vw;
+  --heigth-value: 100vh;
+}
