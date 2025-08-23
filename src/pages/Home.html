@@ -3,93 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link rel="stylesheet" href="estilo.css"-->
+    <link rel="stylesheet" href="../styles/homeStyles.css">
 		<link src=app.js>
     <title></title>
 </head>
 <body>   
-		<header>
-			<h1 id="link-navegacao-home"></h1>
-		
-		</header>
+		<header id="area-slideshow">
+			<nav class="contatos">
+				<ul>
+					<li><a href="www.linkedin.com/in/davi-justo-28335720a">LinkedIn</a></li>
+					<li><a href="https://github.com/DAVI-RJ">GitHub</a></li>
+					<li><a href="https://discord.com/channels/@me">Discord</a></li>
+				</ul>
+			</nav>
+			
+			<div class="slider-content">
+				<input type="radio" name="index-btn" id="oneButton" checked>
+				<input type="radio" name="index-btn" id="twoButton">
+				<input type="radio" name="index-btn" id="threButton">
+				<input type="radio" name="index-btn" id="fourButton">
 
-		<main class="container">
-			<div id="slider-class">
 				<div class="slides">
-					<div class="first-imagen">	
-						<img src="oneImagen" alt="primeira imagem">
+					<div class="imagen first">	
+						<img src="../../public/img/oneButton.jpeg" alt="primeira imagem">
 					</div>
 					<div class="imagen">
-						<img src="twoImagen" alt="segundo imagem">
+						<img src="../../public/img/twoButton.jpeg" alt="segundo imagem">
 					</div>
 					<div class="imagen">
-						<img src="threImagen" alt="terceira imagem">
+						<img src="../../public/img/threButton.jpeg" alt="terceira imagem">
+					</div>
+					<div class="imagen">
+						<img src="../../public/img/fourButtun.jpeg" alt="quarta imagem">
 					</div>
 				</div>	
-				<nav class="nav-button">
-					<label for="oneButton"></label>
-					<input type="radio" name="index-btn" id="oneButton">
-					
-					<label for="twoButton"></label>
-					<input type="radio" name="index-btn" id="twoButton">
-					
-					<label for="threButton"></label>
-					<input type="radio" name="index-btn" id="threButton">
-				</nav>
 
+				<nav class="nav-button">
+					<label class="change-btn" for="oneButton"></label>			
+					<label class="change-btn" for="twoButton"></label>	
+					<label class="change-btn" for="threButton"></label>					
+					<label class="change-btn" for="fourButton"></label>
+				</nav>
 			</div>
-			<div id="fundo">
-			<div class="sider-bar">
-				<ul>
-					<li><a href="carreira">carreira</a></li>
-					<li><a href="hobbis">hobbis</a></li>
-					<li><a href="discucao">Discuçã</a></li>
-					<li><a href="contato">contato</a></li>
-				</ul>
-			</div>
-			<div class="primeiroParagrafo">
-					<p><p>
-			</div>
-<!--Deixei minha lista dentro do paragrafo para melhorar a narrativa -->
-			<div class="lista">
+		</header>
+
+		<main>
+			<div id="container">
+				<nav class="sider-bar">
 					<ul>
-							<li></li>
-							<li></li>
-							<li></li>.
+						<li><a href="./formacaoAcademica.html">Formação Academica</a></li>
+						<li><a href="./Portifolio.html">Portifolio</a></li>
+						<li><a href="./Sobre.html">Sobre</a></li>
 					</ul>
-			</div>
-			<nav class="imagemHobbis">
-					<img src="img/trilha_d_Moto.jfif" alt="imagem">
-					<img src="img/canoar.jpg" alt="imagem">
-					<img src="img/futebol.jpg" alt="imagem">
-			</nav>
-			<div class="segundoParagrafo"> 
-					<p></p>
-					<h3></h3>
-			</div>
-<!--Minha tabela, com nome e foto dos paises como pedido no trabalho-->
-			<div>
-				<caption>
-					<table id="imagemPaises">
-						<tr>
-							<th></th><th></th>
-						</tr>
-						<tr>
-							<td></td>
-							<td><img id="japao" src="img/japao.jpg" alt="imagem"></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><img id="EstadosUnidos" src="img/USA.jpg" alt="imagem"></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><img id="franca" src="img/franca.jpg" alt="imagem"></td>
-						</tr>
-					</table>
-				</caption>
+				</nav>
+				<div class="flex-container">
+					<section class="apresentacao">
+						
+						<div class="section-class">
+							<h2>Davi Ribeiro Justo</h2>
+							<p>Brasileiro, 27 anos<p>
+							<p> Sao Paulo - SP, Brasil</p>
+						</div>
+							
+						<div class="section-class"> 
+							<h3>Objetivos</h3>
+							<p>Estou a procura de uma oportunidade para ingressar no mercado de trabalho, 
+								atundo na minha area de especificaçãp, acredito que meus conhecimento deve 
+								agregar valor a sua equipe e a sua empresa, de modo que possamos juntos
+								desenvolver soluções <span>sustentaveis, inovadoras e brilhantes.</span>
+								<br>
+									Busco sempre melhorar minhas habilidades tecnicas, antenado com o avanço
+								tecnologico, para contribuir com eficiencia a renomeada empresas que trabalho,
+								cumprindo metas, desafios e a colaboração. 
+							</p>		
+						</div>
+
+						<div class="section-class">
+							<h2>O blog</h2>
+							<p></p>
+						</div>
+					</section>
 				</div>
-			<br>           
-	</main>
-</body>
+			</div>		
+		</main>
+	</body>
 </html>
