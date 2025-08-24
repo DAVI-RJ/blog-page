@@ -3,18 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/stylesGlobais.css">
+  <link rel="stylesheet" href="../styles/formacaoAcademicaStyle.css">
   <title>formacao Academica</title>
 </head>
 <body>
-  <div>
-    <h2>Trilha de apredizagem</h2>
-    <div>
-      <h3>Dashboard</h3>
+    <header id="header-class">
+      <div>
+        <p>Cursos e graficos</p>
+      </div>
+      <div>
+        <h1>Formação Academica</h1>
+      </div>
+      <nav class="navegacao-pagina">
+        <ul>
+          <li><button id="btn">Home</button></li>
+          <li><button>Login Out</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="formacao">
+        <aside class="aside">
+
+          <div class="cardsFormacao">
+            <h4>Análise de Desenvolvimento de Sistema</h4>
+            <p title="discricao">graduação tecnologo para desenvolvimento de sistemas</p>
+            <p title="instituicao">Instituiçao: <span>UNINTER</span></p>
+            <p title="status">Status: <span>Cursando</span></p>
+            <data value="02-12-2025">02/01/2025</data>
+          </div>
+
+          <div class="cardsFormacao">
+            <h4>Full Stack Web Development Bootcamp</h4>
+            <p title="discricao">Curso voltado para as principais ferramentas de desenvolvimento Web,
+            Backend: node.js, Frontend: React, Banco de dados: postgreSQL.</p>
+            <p title="instituicao">Instituiçao: <span>Udemy</span></p>
+            <p title="status">Status: <span>Cursando</span></p>
+            <data value="02-12-2025">02/01/2025</data>
+          </div>
+
+          <div class="cardsFormacao">
+            <h4>Teste de software Manual</h4>
+            <p title="discricao">Gherkin, testes unitários, metodologias ágil.</p>
+            <p title="instituicao">Instituiçao: <span>Udemy</span></p>
+            <p title="status">Status: <span>Concluido</span></p>
+            <data value="02-12-2025">02/01/2025</data>
+          </div>
+
+          <div class="cardsFormacao">
+            <h4>Dominando Backend Node</h4>
+            <p title="discricao">Desenvolvimento de servidor node, framework express, ORM sequelize, API RESTful.</p>
+            <p title="instituicao">Instituiçao: <span>Qualifica</span></p>
+            <p title="status">Status: <span>Concluido</span></p>
+            <data value="02-12-2025">02/01/2025</data>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="cardsFormacao">
+            <h2>Idiomas</h2>
+            <p title="discricao">Inglês Avançado</p>
+            <p title="instituicao">Instituiçao: <span>IW english school</span></p>
+            <p title="status">Status: <span>Concluido</span></p>
+            <data value="02-12-2025">02/01/2025</data>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="cardsFormacao">
+            <h2>Conhecimentos complementares</h2>
+            <p title="nome curso">Excel Intermediario</p>
+            <p title="nome curso">Power BI</p>
+            <p title="nome curso">JavaScript</span></p>
+            <p title="nome curso">Offcie 365<p>
+          </div>
+        </aside>
+      </div>
+      <div id="dashboard">
+
+        <div class="linhaDeTempo">
+          <canvas id="linhaDeTempo"></canvas>
+          <h2>Trilha de apredizagem</h2>
+          <h3>Dashboard</h3>
+        </div>
+
+        <div class="linhaDeTempo">
+          <canvas></canvas>
+          <h2>Trilha de apredizagem</h2>
+          <h3>Dashboard</h3>
+        </div>
+
+        <div class="linhaDeTempo">
+          <canvas></canvas>
+          <h2>Trilha de apredizagem</h2>
+          <h3>Dashboard</h3>
+        </div>
+      </div>
     </div>
-    <aside>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quibusdam inventore delectus possimus nesciunt, dolor 
-        eligendi mollitia enim maiores eos.</p>
-    </aside>
-  </div>
+  <footer class="footer-class">
+    <div>
+      <p>desenvolvido por <span>Davi Ribeiro</span> <data value="correntData"></data></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../app/formacao.js"></script>
 </body>
 </html>

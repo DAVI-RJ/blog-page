@@ -8,38 +8,58 @@
 	margin: 0 auto;
 }
 
-/*css para estilização do cabeçalho e slideshow na primeira parte*/
-#area-slideshow{
-	width: 100vw;
-	height: 40vh;
-	position: fixed;
-	margin-top: 0;
+/*css para estilização do cabeçalho e slideshow */
+#header-area{
+	position: sticky;
+	height: 30vh;
+	top: 0;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
-	box-shadow: 0 3px black;
+	box-shadow: 0 2px black;
 	z-index: 1;
 }
+/*qualidades*/
+.qualidades{
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	z-index: 2;
+}
+
+/*css contatos */
 .contatos{
 	padding: 10px;
-	z-index: 2;
 	margin: 10px;
+	z-index: 2;
+}
+.contatos ul{
+	margin: 5px;
+	padding: 0;
 }
 .contatos li {
-	background: white;
 	padding: 5px;
 	margin: 5px;
+	background: #ccc;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+.contatos li:hover{
+	background: linear-gradient(10deg, red 25%, white 99%);
+	transition: 0,6s;
+}
 .contatos li a{
+	color: black;
 	text-decoration: none;
+	font-size: 18px;
 }
 .contatos li a:hover{
 	color: white;
 	transition: 0,6s;
 }
 
+/*css para ajustar o slideshow*/
 .slider-content{
 	width: 100%;
 	height: 100%;
@@ -57,7 +77,7 @@
 }
 .imagen{
 	width: 25%;
-	transition: 0.5s;
+	transition: 0.10s;
 }
 .imagen img {
 	width: 100%;
@@ -105,171 +125,73 @@
 	display: flex;
 }
 
-/*menu lateral para navegação de pagina*/
+/*menu lateral para navegação outras paginas pagina*/
 .sider-bar {
 	background: linear-gradient(10deg, #0eafe0 10%, black 99%);
+	box-shadow: 2px black;
 	border: 1px solid #ccc;
-	margin-top: 40vh;
-	height: 100vh;
-	width: 40vw;
-	
+	width: 50vw;
+	font-size: 30px;
 }
 .sider-bar ul {
-	margin: 0;
+	margin: 5px;
 	padding: 0;
 }
 .sider-bar li{
 	margin: 5px;
+	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0 2px black;
+	border: 1px solid #ccc;
 	background: #ccc;
 	text-align: center;
 }
+.sider-bar li:hover{
+	background: linear-gradient(10deg, red 25%, white 99%);
+	transition: 0,6s;
+}
 .sider-bar li a{
+	color: black;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 18px;
 }
 .sider-bar li a:hover{
 	color: white;
-	transition: 0,6s;
 }
+
 /*conteudo do centro*/
 .flex-container{
+	background: linear-gradient(72deg, #ccc 10%, white 99%);
 	display: flex;
 	flex-direction: column;
-	margin-top: 40vh;
-	
 }
 /* conteundo de apresençao cv*/
 .apresentacao{
-	background: linear-gradient(72deg, #0eafe0 10%, black 99%);
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
-	padding: 5px;
 }
 
 .section-class{
 	border-radius: 5px;
-	margin: 5px;
+	margin: 10px;
 	padding: 5px;
-	border: 1px solid #ccc;
+	box-shadow: 0 3px black;
+	border: 2px solid #ccc;
 }
 /* paragrafo paragrafo e titulo do conteudo principal*/
-.section-class h1 p{
-	text-align: justify;
+.section-class h1{
 	align-items: center;
 	padding: 5px;
+}
+.section-class p{
+	text-align: justify;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: 500;
 }
 
-/*deixei algums css da msg aqui para seguir a ordem das class
-.lista{
-	padding: 10px;
-	margin: 20px;
+.footer-class{
+  bottom: 0;
+  text-align: center;
 }
-li{
-	padding: 10px;
-	font-size: 20px;
-}
-	*/
-/*imagens dos meus hobbis*/
-
-/*
-.segundoParagrafo{
-	text-align: justify;
-	font-size: 20px;
-	align-items: center;
-	padding: 5px;
-	margin: 10px;
-}
-*/
-/*difinir alguns parametros para tabela como bg, font, linhas da estrutura
-table{
-	text-align: justify;
-	background-image: url(img/terra_e_avião.jpg);
-	background-size: cover;
-	justify-content: space-between;
-	margin:20px;
-	font-size: 20px;
-	color: white;
-	border: solid black 2px;
-	width: 40vw;
-	height: 40vh;
-}
-#imagemPaises img{
-	padding: 10px;
-	width: 20vh;
-	height: 20vh;
-}
-table tr{
-	border: solid black 2px;
-}
-table td{
-	border: solid black 2px;
-}
-.terceiroParagrafo{
-	text-align: justify;
-	font-size: 20px;
-	align-items: center;
-	padding: 5px;
-	margin: 10px;    
-}
-.terceiroParagrafo a:hover{
-	color: red;
-}
-*/
-/*esse são os codigos do primeira pagina login, 
-referente o botão, mensagem da pagina1 
-.visitante{
-	font-family: Impact, 'Arial Bold', sans-serif;
-	display: grid;
-	grid-gap: 10px;
-	justify-items: center;
-	align-items: content;
-	font-size: 20px;
-	padding: 10px;
-	margin: 50px;
-	background-color:rgb(240, 163, 70);
-	border-radius: 50px 50px ;
-}
-.visitante p{
-	padding: 40px;
-	font-size: 15px;
-	transition: 2s;
-}
-.visitante p:hover {
-	font-size: 30px;
-}
-input{
-	border-radius: 10px;
-	border: solid black 2px;
-}
-button{
-	font-family: Impact, Haettenschweiler;
-	background-color: rgb(176, 141, 99);
-	border-radius: 20px ;
-	border: solid black 2px;
-}
-button:hover{
-	background-color: green;
-}
-*/
-/*esse sao os ID utilizado no JavaScript
-#msg{
-	text-align: justify;
-	justify-items: center;
-	align-items: center;
-	display: block;    
-	border: solid black 2x;
-	color: rgb(176, 141, 99);
-	background-color: green;
-	font-size: 25px;
-}
-#bt{
-	text-align: justify;
-	font-size: 20px;
-}
-#nome{
-	font-size: 20PX;
-}
-*/ 

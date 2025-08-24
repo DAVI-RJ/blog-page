@@ -1,8 +1,68 @@
+/* variaves para reaproveitamento de cofiguraçoes */
 :root{
-  --cor-primaria: blue;
-  --cor-segundaria: blue;
-  --font-tamanho: 16px;
-  --width-value: 100vw;
-  --width-value-group: 50vw;
-  --heigth-value: 100vh;
+  --cor-primaria: linear-gradient(10deg, #0eafe0 10%, black 99%);
+  --font-tamanho: font-size: 15px;
+  --font-family: Arial, Helvetica, sans-serif;
+  --background-componentes: #ccc;
+  --li-background: linear-gradient(10deg, red 25%, white 99%)
+}
+body{
+  padding: 0;
+  margin: 0; 
+}
+/* configuraçao geral do header das paginas*/
+#header-class{
+  background: var(--cor-primaria);
+  box-shadow: 0 3px black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+}
+#header-class h1{
+  color: white;
+}
+#header-class p{
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/*elemento a direira no header com botoes para mudar de pagina e sair*/
+.navegacao-pagina{
+	margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navegacao-pagina ul{
+	margin: 5px;
+	padding: 0;
+}
+.navegacao-pagina li{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+  list-style: none;
+	border: 1px solid #ccc;
+}
+.navegacao-pagina li:hover{
+	background: var(--li-background);
+	transition: 0,6s;
+}
+
+.navegacao-pagina button{
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-tamanho);
+  font-family: var(--font-family);
+}
+
+.footer-class{
+  bottom: 0;
+  text-align: center;
 }
