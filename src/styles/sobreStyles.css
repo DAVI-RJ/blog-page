@@ -1,60 +1,40 @@
-/*configuração geral do navegador*/
-body{
-  margin: 0;
-  padding: 0;
-}
 
-
-/* cabecalho da pagina*/
-.cabecalho{
-  border: 2px solid black;
-  background-color: aqua;
-  min-width: fit-content;
-  justify-items: center;
-  align-items: center;
-  align-content: space-between;
-}
-.titulo-pagina{
-  text-align: center;
-  color: #ccff00;
-}
-.link-navegacao{
-  background-color: aqua;
-}
-.link-navegacao li a{
-  text-decoration: none;
-}
-.link-navegacao li a:hover{
-  color: white;
-}
-
-
-/* css da pagina*/
+/* css para o layout da pagina*/
 #sobre-class{
   display: flex;
-  height: 100vh;
-  min-height: fit-content;
 }
 
 /* css do menu lateral */
 .sider-bar-hobbis{
+  align-items: center;
+  justify-content: center;
   background-color: #ccff00;
-  border: 2px solid black;
-  margin-left: 0;
   flex-direction: column;
-  width: 20vw;
+  width: 30%;
+}
+.sider-bar-hobbis ul{
+  padding: 0;
+  margin: 10px;
 }
 
 .sider-bar-hobbis li{
-  margin: 5px;
-  border: 2px solid black;
+  padding: 10px;
+  list-style: none;
 }
 
 /* centro da pagina onde mostro o conteudo principal*/
 .container{
-  display: block;
   border: 2px solid black;
-  background-color: #cccc;
-  width: 80vw;
   text-align: center;
+  width: 70%;
+}
+
+#conteudo-pagina{
+  border: 2px solid black;
+  background: orange;
+  height: 100%;
+}
+#conteudo-pagina img {
+  width: 300px;
+  height: 200px;
 }

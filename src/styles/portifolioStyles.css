@@ -1,0 +1,35 @@
+body{
+  
+}
+/*informaçoes do projetos*/
+.cardsInformativo{
+  font-size: 18px;
+  text-align: center;
+}
+
+.tabela-class{
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+/* resumo que esta junto com a tabela*/
+.resumo{
+  background: linear-gradient(20deg,orange 25%, yellow 99% );
+  border: 1px solid black;
+  font-size: 16px;
+  text-align: justify;
+}
+.resumo p{
+  padding: 10px;
+}
+
+table{
+  border: 2px solid black;
+}
+caption{
+  border: 2px solid black;
+}
+table th, td {
+  border: 2px solid black;
+}

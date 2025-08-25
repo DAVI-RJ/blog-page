@@ -3,53 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/hobbisPages.css">
+  <link rel="stylesheet" href="../styles/stylesGlobais.css">
+  <link rel="stylesheet" href="../styles/sobreStyles.css">
   <title>hobbis</title>
 </head>
 <body>
-  <header class="cabecalho">
-
-    <div class="titulo-pagina">
-      <h1>Hobbis</h1>
+  <header id="header-class">
+    <div>
+      <p>Hobbis, gostos pessoais</p>
     </div>
-
-    <div class="link-navegacao">
+    <div>
+      <h1>Sobre</h1>
+    </div>
+    <nav class="navegacao-pagina">
       <ul>
-        <li><a href="Home.html">Home</a></li>
+        <li><button id="btn">Home</button></li>
+        <li><button>Login Out</button></li>
       </ul>
-    </div>
-
+    </nav>
   </header>
 
   <div id="sobre-class">
-    <div class="sider-bar-hobbis">
+    <nav class="sider-bar-hobbis">
       <ul>
-        <li>fotogrfia</li>
-        <li>Desenhar</li>
-        <li>Xadrez</li>
-        <li>Musica</li>
-        <li>Jardinagem</li>
+        <li><button>fotogrfia</button></li>
+        <li><button>Desenhar</button></li>
+        <li><button>Xadrez</button></li>
+        <li><button>Musica</button></li>
+        <li><button>Jardinagem</button></li>
       </ul>
-    </div>
-
-    <div class="container">
       <div>
-        <h1>Titulo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vero?</p>
-      </div>
-
-      <div id="conteudo-pagina">
-        <img id="fist-img" src="" alt="">
-        <p>discrição</p>
-      </div>
-
-      <div >
         <nav class="postagem">
           <h4>post</h4>
         </nav>
       </div>
+    </nav>
 
+    <div class="container">
+      <div id="conteudo-pagina">
+        <h1>Fotografia</h1>
+        <p>Mais que uma paixão, uma forma de gravar momentos</p>
+      
+        <img src="../../public/img/oneButton.jpg" alt="">
+        <p>discrição</p>
+        
+      </div>
     </div>
   </div>
+  <footer class="footer-class">
+		<div>
+			<p>desenvolvido por <span>Davi Ribeiro</span> <data value="correntData"></data></p>
+		</div>
+  </footer>	
 </body>
 </html>

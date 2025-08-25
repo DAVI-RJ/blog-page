@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/stylesGlobais.css">
+  <link rel="stylesheet" href="../styles/portifolioStyles.css">
   <title>Portifolio</title>
 </head>
   <body>
@@ -21,27 +22,95 @@
         </ul>
       </nav>
     </header>
-    <div>
+    <div class="cardsInformativo">
+      <h3>Projetos Frontend</h3>
+      <p>Abaixo temos uma tabelas com um projeto Frontend, prentendo desenvolver outros e alimentar mais e mais essa tabela, deixei um breve resumo falando mais sobre as ferramentas e o porque da escolha.</p>
+    </div>
+    <div class="tabela-class">
+      <div class="resumo">
+        <p>Desenvolver um front de qualidade, focado na esperiencia do usuario e na interação dos elementos.</p>
+        <p><a href="#">Vite</a> Esse framework oferece uma estrutura pronta facilitando o build, permitindo o foco na codificação</p>
+        <p><a href="#">React</a> framework muito utilizado no mercado, possui otima abordagem.
+        <br>
+        Nivel de downlond: <span>#</span>
+        </p>
+      </div>
       <table>
-        <caption> tabela dos Projetos</caption>
+        <caption>Frontend Projetos</caption>
+        <thead>
           <tr>
-            <th>Backend</th>
-            <th>Frontend</th>
-            <th></th>
+            <th>Nome Projeto</th>
+            <th>Ferramentas</th>
+            <th>Design Partener</th>
+            <th>Bibliotecas</th>
+            <th>Gerenciador de Pacotes</th>
+            <th>Repositorio GitHub</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td>node.js</td>
-            <td>React</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-    </div>       
+            <td>Frontend-React</td>
+            <td>React, Vite</td>
+            <td>criação de componentes reutilizaveis</td>
+            <td>useForm, useState, yup</td>
+            <td>npm</td>
+            <td><a href="https://github.com/DAVI-RJ/frontend_React">Repositorio</a></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cardsInformativo">
+      <h3>Projetos Backend</h3>
+      <p>Quando o assunto e beckend, encaro com muito intusiasmo, gosto de entende que para um sistema funcionar deve levar em consideração a integridade, confiabilidade, disponibilidade e essa parte do desenvolvimento de qualquer projeto deve foca nesse principios.</p>
+      <p>Banco de Dados: PostgreSQL</p>
+    </div>
+    <div class="tabela-class">
+      <div class="resumo">
+        <p>O backend tem com foco principal a comunicação entre o banco de dados e o a parte visual da aplicação</p>
+        <p><a href="#">Node</a> Esse framework oferece uma estrutura pronta facilitando o desenvolvimento do projeto, permitindo a criação de servidores mais robusto</p>
+        <p>O <a href="#">Express</a> é um ferramenta para auxiliar o desenvolmento do servido, economizando muitas linhas de codigo, focando em qualidade de API e rotas HTTP RESTFul.  
+        <br>
+        Nivel de downlond: <span></span>
+        </p>
+      </div>
+    <table>
+      <caption>Backend Projetos</caption>
+      <thead>
+        <tr>
+          <th>Nome Projeto</th>
+          <th>Ferramentas</th>
+          <th>Design Partener</th>
+          <th>Bibliotecas</th>
+          <th>Gerenciador de Pacotes</th>
+          <th>Repositorio GitHub</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Backend-project</td>
+          <td>node.js, express, nodemon</td>
+          <td>MVC, criação de modelos e controles</td>
+          <td>JWT, yup, bycrpt</td>
+          <td>npm</td>
+          <td><a href="https://github.com/DAVI-RJ/backend_project">Repositorio</a></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Backend-node.js</td>
+          <td>node.js, express, sequelize, nodemon</td>
+          <td>MVC</td>
+          <td>JWT, yup, bycrpt</td>
+          <td>yarn</td>
+          <td><a href="https://github.com/DAVI-RJ/backend_node.js">Repositorio</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <footer class="footer-class">
+			<div>
+				<p>desenvolvido por <span>Davi Ribeiro</span> <data value="correntData"></data></p>
+			</div>
+  	</footer>	       
   </body>
 </html>

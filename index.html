@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./src/styles/loginStyles.css">
+	<title>Login</title>
+</head>
+<body>
+	<main id="login-class">
+		<div class="apresentacao-site">
+			<p></p>
+		</div>
+		<div class="visitante">
+			<div>
+				<p>Entre com o email e o login</p>
+			</div>
+
+			<div class="formulario">
+				<form action="./src/pages/Home.html" id="enventoForm">
+					<select name="visitante">
+						<option value="Professor">Professor</option>
+						<option value="Recrutador">Recrutador</option>
+						<option value="visitante">visitante</option>
+					</select>
+					<br>
+					<label name="nome">nome:</label>
+					<input type="text" id="nome" >
+					<!--pattern="[A-Za-z]"-->
+					<br>
+					<label name="email">email:</label>
+					<input type="email">
+					<br>
+					
+					
+					<label for="termos">Temos de Privacidade</label>
+					<input type="checkbox" name="termos" id="aceiteTermos" value= false>
+					<div id="msg"></div>
+					
+					<br>
+					<button id="btn">Login</button>
+				</form>
+				</div>
+					<div>
+						
+					<div class="termos" id="showTermo">
+						<p>Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.</p>
+					</div>
+					<a href="#" id="termos">ler os termos</a>
+				</div>
+			</div>
+	</main>
+	<script src="./src/app/login.js"></script>
+</body>
+</html>
