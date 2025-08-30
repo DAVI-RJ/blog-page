@@ -12,20 +12,24 @@ body{
 }
 /* configuraçao geral do header das paginas*/
 #header-class{
-  background: var(--cor-primaria);
-  box-shadow: 0 3px black;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   top: 0;
   width: 100%;
+  max-width: 100%;
   position: sticky;
   z-index: 1;
+  background: var(--cor-primaria);
+  box-shadow: 0 3px black;
 }
+
 #header-class h1{
   color: white;
 }
+
 #header-class p{
   color: white;
   font-size: 20px;
@@ -65,4 +69,12 @@ body{
 .footer-class{
   bottom: 0;
   text-align: center;
+}
+
+.footer-class a{
+  text-decoration: none;
+}
+
+.mostrar-termo{
+  display: none;
 }

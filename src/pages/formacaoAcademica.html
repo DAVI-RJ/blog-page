@@ -17,8 +17,8 @@
       </div>
       <nav class="navegacao-pagina">
         <ul>
-          <li><button id="btn">Home</button></li>
-          <li><button>Login Out</button></li>
+          <li><button id="btnHome">Home</button></li>
+          <li><button id="nextStep">Proxímo</button></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +31,7 @@
             <p title="discricao">graduação tecnologo para desenvolvimento de sistemas</p>
             <p title="instituicao">Instituiçao: <span>UNINTER</span></p>
             <p title="status">Status: <span>Cursando</span></p>
-            <data value="02-12-2025">02/01/2025</data>
+            <data value="03/2025"></data>
           </div>
 
           <div class="cardsFormacao">
@@ -40,7 +40,7 @@
             Backend: node.js, Frontend: React, Banco de dados: postgreSQL.</p>
             <p title="instituicao">Instituiçao: <span>Udemy</span></p>
             <p title="status">Status: <span>Cursando</span></p>
-            <data value="02-12-2025">02/01/2025</data>
+            <data value="05/2025"></data>
           </div>
 
           <div class="cardsFormacao">
@@ -48,7 +48,7 @@
             <p title="discricao">Gherkin, testes unitários, metodologias ágil.</p>
             <p title="instituicao">Instituiçao: <span>Udemy</span></p>
             <p title="status">Status: <span>Concluido</span></p>
-            <data value="02-12-2025">02/01/2025</data>
+            <data value="03/2025"></data>
           </div>
 
           <div class="cardsFormacao">
@@ -56,7 +56,7 @@
             <p title="discricao">Desenvolvimento de servidor node, framework express, ORM sequelize, API RESTful.</p>
             <p title="instituicao">Instituiçao: <span>Qualifica</span></p>
             <p title="status">Status: <span>Concluido</span></p>
-            <data value="02-12-2025">02/01/2025</data>
+            <data value="12/2024"></data>
           </div>
           <br>
           <hr>
@@ -66,7 +66,7 @@
             <p title="discricao">Inglês Avançado</p>
             <p title="instituicao">Instituiçao: <span>IW english school</span></p>
             <p title="status">Status: <span>Concluido</span></p>
-            <data value="02-12-2025">02/01/2025</data>
+            <data value="12/2016"></data>
           </div>
           <br>
           <hr>
@@ -83,30 +83,40 @@
       <div id="dashboard">
 
         <div class="linhaDeTempo">
-          <canvas id="linhaDeTempo"></canvas>
+          <canvas id="primeiroDashBoard"></canvas>
           <h2>Trilha de apredizagem</h2>
-          <h3>Dashboard</h3>
+          <h3>Legenda</h3>
+          <p>Fundamentos de Desenvolvimento Sistema: FDS</p>
+          <p>Fundamentos de Design Sistema: F.Design S</p>
+          <p>Fundamentos Sistema da Informaçao: FSI</p>
+          <p>Logica de Programação e Algoritimo: LPA</p>
         </div>
 
         <div class="linhaDeTempo">
-          <canvas></canvas>
+          <canvas id="segundoDashBoard"></canvas>
           <h2>Trilha de apredizagem</h2>
-          <h3>Dashboard</h3>
-        </div>
-
-        <div class="linhaDeTempo">
-          <canvas></canvas>
-          <h2>Trilha de apredizagem</h2>
-          <h3>Dashboard</h3>
+          <h3>Legenda</h3>
+          <p>inicio do curso</p>
+          <p>momento do curso</p>
+          <p>fim do curso</p>
         </div>
       </div>
     </div>
-  <footer class="footer-class">
-    <div>
-      <p>desenvolvido por <span>Davi Ribeiro</span> <data value="correntData"></data></p>
-    </div>
-  </footer>
+
+    <!-- footer do site com o termos e autoria-->
+    <footer class="footer-class">
+      <div>
+        <p>Todos os direitos reservados, <span><a id="termos" href="#">Termos Responsabilidade</a></span></p>
+
+        <p class="mostrar-termo" id="mostrarTermo" >Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
+        </p>
+
+        <p>desenvolvido por Davi Ribeiro, <span id="ano-atual"></span></p>
+      </div>
+  	</footer>
+    
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../app/appGlobais.js"></script>
   <script src="../app/formacao.js"></script>
 </body>
 </html>

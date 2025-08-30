@@ -5,6 +5,7 @@ body{
 .cardsInformativo{
   font-size: 18px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .tabela-class{
@@ -19,6 +20,7 @@ body{
   border: 1px solid black;
   font-size: 16px;
   text-align: justify;
+  box-sizing:border-box;
 }
 .resumo p{
   padding: 10px;
@@ -26,6 +28,7 @@ body{
 
 table{
   border: 2px solid black;
+  box-sizing:border-box;
 }
 caption{
   border: 2px solid black;
