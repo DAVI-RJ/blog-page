@@ -1,31 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   align-items: center;
   justify-content: center;
 }
-main{
-  border: 2px solid black;
+
+.formulario{
   margin: 20px;
-  font-size: 18px;
   height: 100%;
-  
+  max-width: 100%;
+  border-radius: 10px;
 }
-form{
+.formulario form{
   display: flex;
   flex-direction: column;
+  width: 50vw;
+}
+.formulario select, input, label, textarea {
+  margin: 5px;
   padding: 10px;
-  
-}
-
-main form input, label {
-  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+  border: 0;
+}
+.formulario input {
+  box-shadow: 0 2px black;
 }
 
-main form #mensagem{
-  padding: 50px;
+.formulario button{
+  margin: 5px;
+  padding: 10px;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formulario button:hover{
+  background: lightgreen;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.error{
+  font-weight: 500;
+  padding: 5px;
+  color: red;
 }
 
 .recrutador {

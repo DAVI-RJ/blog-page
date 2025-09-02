@@ -7,10 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextStep = document.querySelector("#nextStep")?.addEventListener("click", () => {
     const urlAtual = window.location.pathname; 
       if(urlAtual.includes("formacaoAcademica")){
-        window.location.href = "../../index.html";
-      }
-        
-  });
+        window.location.href = "Portifolio.html";
+      }else if(urlAtual.includes("Portifolio")){
+        window.location.href = "Sobre.html";
+      }else if(urlAtual.includes("Sobre")){
+        window.location.href = "contato.html";
+      }else if(urlAtual.includes("contato")){
+        nextStep.style.display = "none";
+      }     
+  }); 
  
 
   /*footer javascript*/
@@ -23,10 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isTermo = !isTermo;
       showTermo.style.display = (isTermo) ? "block" : "none";
     });
-  } else {
-    console.error("Element(s) for footer javascript not found.");
-  }
-
+  } 
 
   let anoAtual = document.getElementById("ano-atual");
 

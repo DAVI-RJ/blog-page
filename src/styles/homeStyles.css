@@ -68,7 +68,6 @@
 	background: linear-gradient(10deg, #0eafe0 10%, black 99%);
 	border: 1px solid #ccc;
 	width: 100%;
-	font-size: 30px;
 }
 
 .sider-bar ul {
@@ -119,14 +118,10 @@
 	box-shadow: 0 3px black;
 	border: 2px solid #ccc;
 }
-/* paragrafo paragrafo e titulo do conteudo principal*/
-.section-class h1{
-	align-items: center;
-	padding: 5px;
-}
+
 .section-class p{
 	text-align: justify;
-	font-size: 20px;
+	font-size: 16px;
 	padding: 10px;
 	font-weight: 500;
 }

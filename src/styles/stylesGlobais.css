@@ -50,20 +50,20 @@ body{
 .navegacao-pagina li{
 	padding: 5px;
 	margin: 5px;
-	border-radius: 5px;
   list-style: none;
-	border: 1px solid #ccc;
-}
-.navegacao-pagina li:hover{
-	background: var(--li-background);
-	transition: 0,6s;
 }
 
 .navegacao-pagina button{
   width: 100%;
   text-align: center;
+  padding: 5px;
   font-size: var(--font-tamanho);
   font-family: var(--font-family);
+}
+.navegacao-pagina button:hover{
+  color: white;
+  background: var(--li-background);
+	transition: 1s;
 }
 
 .footer-class{

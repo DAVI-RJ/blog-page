@@ -10,7 +10,7 @@
 <body>
   <header id="header-class">
     <div>
-      <p>Contato para desenvolvimento <br>de projeto e <br>vagas de emprego</p>
+      <p>Para propostas</p>
     </div>
     <div>
       <h1>Entre em contato</h1>
@@ -18,47 +18,34 @@
     <nav class="navegacao-pagina">
       <ul>
         <li><button id="btnHome">Home</button></li>
-          <li><button id="btnBackOut">Voltar</button></li>
+        <li><button id="nextStep">Proxímo</button></li>
       </ul>
     </nav>
   </header>
   <div class="container">
-    <aside></aside>
-    <main>
-      <form>
-        <label for="name">Nome:</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
 
-        <label for="name">Email:</label>
-        <input type="email" name="nome" id="nome" placeholder="Digite seu email">
+    <div class="formulario">
+      <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
 
-        <div class="recrutador">
-          <label for="empresa">Empresa:</label>
-          <input type="text" name="empresa" id="empresa" placeholder="nome da empresa">
-
-          <label for="nomeVaga">Nome vaga:</label>
-          <input type="text" name="nomeVaga" id="nomeVaga" placeholder="vaga sugerida">
-        </div>
-
-        <div class="clientes">
-          <label for="empresa">Empresa:</label>
-          <input type="text" name="empresa" id="empresa" placeholder="nome da empresa">
-
-          <label for="projeto">Projeto:</label>
-          <input type="text" name="projeto" id="projeto" placeholder="Deixa um breve sobre">
-        </div>
-
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
 
         <label for="mensagem">Mensagem:</label>
         <textarea name="mensagem" id="mensagem" placeholder="Deixa uma mensagem de critica construtiva ou sugestão"></textarea>
+
+        <button type="submit">Enviar</button>
+
+        <div class="error" id="error"></div>
       </form>
-    </main>  
+    </div>
   </div>
 
   <!-- footer do site com o termos e autoria-->
   <footer class="footer-class">
     <div>
-      <p>Todos os direitos reservados, <span><a id="termos" href="#">Termos Responsabilidade</a></span></p>
+      <p>Todos os direitos reservados, <span><a href="#" id="termos">Termos Responsabilidade</a></span></p>
 
       <p class="mostrar-termo" id="mostrarTermo" >Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
       </p>
@@ -68,5 +55,6 @@
   </footer>
   
   <script src="../app/appGlobais.js"></script>
+  <script src="../app/formContatoApp.js"></script>
 </body>
 </html>

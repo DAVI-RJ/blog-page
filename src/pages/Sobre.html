@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/stylesGlobais.css">
   <link rel="stylesheet" href="../styles/sobreStyles.css">
-  <title>hobbis</title>
+  <title>Sobre</title>
 </head>
 <body>
   <header id="header-class">
     <div>
-      <p>Hobbis, gostos pessoais</p>
+      <p >Qualidades</p>
     </div>
     <div>
       <h1>Sobre</h1>
@@ -18,42 +18,77 @@
     <nav class="navegacao-pagina">
       <ul>
         <li><button id="btnHome">Home</button></li>
+        <li><button id="nextStep">Proxímo</button></li>
       </ul>
     </nav>
   </header>
 
-  <div id="sobre-class">
-    <nav class="sider-bar-hobbis">
-      <ul>
-        <li><button>fotogrfia</button></li>
-        <li><button>Desenhar</button></li>
-        <li><button>Xadrez</button></li>
-        <li><button>Musica</button></li>
-        <li><button>Jardinagem</button></li>
-      </ul>
-      <div>
-        <nav class="postagem">
-          <h4>post</h4>
-        </nav>
-      </div>
-    </nav>
+  <div class="sobre-class">
+    <div class="qualidades">
+      <nav>
+        <ul>
+          <li><a href="#primeiro">Resolução de problemas</a></li>
+          <li><a href="#segundo">Tecnologias</a></li>
+          <li><a href="#terceiro">Comunicação</a></li>
+          <li><a href="#quarto">Colaboração em equipe</a></li>
+        </ul>
+      </nav>
 
-    <div class="container">
-      <div id="conteudo-pagina">
-        <h1>Fotografia</h1>
-        <p>Mais que uma paixão, uma forma de gravar momentos</p>
-      
-        <img src="../../public/img/oneButton.jpg" alt="">
-        <p>discrição</p>
-        
+      <div class="hobbis">
+        <h3>Meus hobbis</h3>
+        <p>Xadrez, Fotografia, Futebol , tocar violão, Desenhar</p>
       </div>
+    </div>
+  
+    <div class="container">
+
+      <div class="perfil">
+        <h3>Descubra um pouco mais sobre mim</h3>
+      </div>
+ 
+      <main>
+
+        <div class="qualidade-resumo" id="primeiro">
+          <img src="../../public/img/resolucao_problema.jpg" alt="">
+
+          <h3>Resolução de problemas</h3>
+
+          <p>Uma das minhas características que mais gosto de destacar é a criatividade em momentos críticos. Busco sempre manter o foco na solução, analisando diferentes ângulos do problema e criando novas perspectivas. Acredito que a resolução de problemas exige não apenas raciocínio lógico, mas também adaptabilidade, trabalho em equipe e a capacidade de transformar desafios em oportunidades de aprendizado.</p>
+        </div>
+        
+        <div class="qualidade-resumo" id="segundo">
+          <img src="../../public/img/tecnologia.jpg" alt="imagem a respeito da tecnologia">
+
+          <h3>Tecnologias</h3>
+
+          <p>Sou apaixonado por novas tecnologias e estou sempre atento a inovações que tragam impacto positivo e sustentável. Acredito que a tecnologia amplia possibilidades e abre caminhos para evolução constante do meu conhecimento e do meu currículo. Tenho grande interesse em áreas como Web 3.0, Indústria 5.0, aplicações descentralizadas, armazenamento em nuvem e blockchain, que considero fundamentais para o futuro digital.</p>
+        </div>
+
+        <div class="qualidade-resumo" id="terceiro">
+          <img src="../../public/img/comunicacao.jpg" alt="imagem da comunicacao com varios simbolos menores">
+
+          <h3>Comunicação</h3>
+
+          <p>A boa comunicação no ambiente de trabalho desenvolve não apenas a eficiência profissional, mas também fortalece o ser social. Defendo que a comunicação é um elo que quebra barreiras invisíveis, aproximando as pessoas e tornando-as mais empáticas com seus colegas.</p>
+          <br>
+        </div>
+
+        <div class="qualidade-resumo" id="quarto">
+          <img src="../../public/img/conceito_trabalho.jpg" alt="imagem sobre trabalho em equipe">
+
+          <h3>Colaboração em equipe</h3>
+
+          <p>Minha experiência em diferentes setores da indústria me mostrou a importância da colaboração para alcançar resultados sólidos. Acredito que trabalhar em equipe vai além de dividir tarefas: é compartilhar conhecimentos, alinhar objetivos e somar diferentes habilidades para superar desafios. Essa vivência me ensinou a valorizar a diversidade de perspectivas e a construir soluções mais completas e eficientes em conjunto.</p>
+        </div>
+
+      </main>
     </div>
   </div>
 
   <!-- footer do site com o termos e autoria-->
  <footer class="footer-class">
     <div>
-      <p>Todos os direitos reservados, <span><a id="termos" href="#">Termos Responsabilidade</a></span></p>
+      <p>Todos os direitos reservados, <span><a href="#" id="termos">Termos Responsabilidade</a></span></p>
 
       <p class="mostrar-termo" id="mostrarTermo" >Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
       </p>
