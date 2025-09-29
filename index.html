@@ -1,90 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/homeStyles.css">
-		<link rel="stylesheet" href="./src/styles/stylesGlobais.css">
-    <title>Home</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Portfólio de Davi Ribeiro Justo, desenvolvedor Full-Stack, testes de qualidade e avaliação UI/UX.">
 
+		<!-- # ESTILIZAÇAO DA PAGINA INTERNO -->
 
-<body>
-	<!--cabeçalho com slide e texto de apresentação-->
-	
-		<header id="header-class">
+		<link rel="stylesheet" href="./src/styles/HomeStyles.css">
+		<link rel="stylesheet" href="./src/styles/Header.css">
+		<link rel="stylesheet" href="./src/styles/FormularioContatos.css">
+		<link rel="stylesheet" href="./src/styles/Slide.css">
+		<link rel="stylesheet" href="src/styles/Portifolio.css">
 
-			<div class="qualidades">
-				<p id="animacao-paragrafo"class="animacao-paragrafo">Desenvolvimento de site responsivo, qualidades técnicas como programação, bancos de dados, e resolução de problemas, e qualidades interpessoais como pensamento crítico, adaptabilidade, comunicação e proatividade.</p>
-			</div>
+		<!-- # ESTILIZAÇAO DA PAGINA EXTERNO-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-				<h1>Curriculo</h1>
-			
-			<div class="contatos">
-				<nav>
+		<title>Davi Justo | Desenvolvedor Full-Stack </title>
+	</head>
+	<body>
+	<!--#CABEÇALHO -->
+		<header>
+			<nav class="navegacao-superior">
 					<ul>
-						<li><a href="www.linkedin.com/in/davi-justo-28335720a">LinkedIn</a></li>
-						<li><a href="https://github.com/DAVI-RJ">GitHub</a></li>
-						<li><a href="https://discord.com/channels/@me">Discord</a></li>
+						<li><a href="#" aria-label="zona de serviços que podem ser contrato">Serviços</a></li>
+						<li><a href="#" aria-label="referencias de projetos desenvolvidos e link github">Portifolio</a></li>
+						<li><a href="#" aria-label="documentos e artigos, referencias google docs e comunidade devs">Comunidade</a></li>
+						<li><a href="#" aria-label="conheça mais sobre o autor com softskill e experiência profissional">Sobre</a></li>
+						<li><a href="#" aria-label="formulario para contato e links de canais digitais" id="abrir-formulario">Contato</a></li>
 					</ul>
 				</nav>
+				
+			<div class="titulo">
+				<h1>#QueroUmaOportunidade</h1>
+			
+				<h2>Davi Ribeiro Justo</h2>
 			</div>
+
 		</header>
 
-		<main>
-			<div class="container">
-					<!-- link para outras paginas -->
-				<nav class="sider-bar">
-					<ul>
-						<li><a href="./src/pages/formacaoAcademica.html">Formação Academica</a></li>
-						<li><a href="./src/pages/Portifolio.html">Portifolio</a></li>
-						<li><a href="./src/pages/Sobre.html">Sobre</a></li>
-						<li><a href="./src/pages/contato.html">Contato</a></li>
-					</ul>
-				</nav>
-				<div class="flex-container">
+		<div id="formulario-contato" class="formulario">
+  		<div id="conteudo-do-formulario"></div>
+		</div>
+		<main class="container">
+			
+		<!-- #PRIMEIRA SECAO-->
+			<section class="servicos">
+				<div class="slide-area">
+					<div class="card-slide">
+						<h4>Criação  de site</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Criação de sites para negocios.</p>
+					</div>
+			
+					<div class="card-slide"> 	
+						<h4>Teste de Qualidade</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
 
-				<!-- conteudo principal da pagina -->
-					<section class="apresentacao">
-					
-						<div class="section-class">
-							<h2>Davi Ribeiro Justo</h2>
-							<p>Brasileiro, 27 anos<p>
-							<p> Sao Paulo - SP, Brasil</p>
-						</div>
-							
-						<div class="section-class"> 
-							<h3>Objetivos</h3>
-							<p>Estou a procura de uma oportunidade para ingressar no mercado de trabalho, 
-								atundo na minha area de especificação, acredito que meus conhecimento deve 
-								agregar valor a sua equipe e a sua empresa, de modo que possamos juntos
-								desenvolver soluções <span>sustentaveis, inovadoras e brilhantes.</span>
-							</p>
-							
-							<p>Busco sempre melhorar minhas habilidades tecnicas, antenado com o avanço
-								tecnologico, para contribuir com eficiencia a renomeada empresas que trabalho,
-								cumprindo metas, desafios e a colaboração. 
-							</p>		
-						</div>
-
-						<div class="section-class">
-							<h3>Experiência profissional</h3>
-							<p>Atuei por 6 anos na área administrativa, sempre valorizando o trabalho em equipe e
-							a boa comunicação no ambiente de trabalho, clientes e fornecedores, minhas
-							principais atividades incluíam, faturamento, gestão de frota, geração de relatórios,
-							gerenciamento de risco, gerenciamento dos documentos, emissão de documentos
-							fiscais. Propus soluções consciente e sustentável, otimizando 50% do fluxo de
-							trabalho</p>
-							<P>Empresa: Giovanella Transportes Rodoviário LTDA
-								<br>
-								<Span>Período: 08/06/2018 até 19/04/2024</Span>
-							</p>
-						</div>
-					</section>
+					<div class="card-slide"> 	
+						<h4>Avaliação UI / UX</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Lorem ipsum dolor sit amet consectetur. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti.</p>
+					</div>
 				</div>
-			</div>
+			<!-- #CONFIGURAÇAO DO SLIDE REF. CSS - HomeStyles.css-->
+				<div class="servicos-navegacao">
+					<nav>
+						<label for="card1"></label>
+						<input type="radio" class="navegar-slide" id="card1" name="btn" value="1" checked>
 
-			<!-- footer do site com o termos e autoria-->
+						<label for="card2"></label>
+						<input type="radio" class="navegar-slide" id="card2" name="btn" value="2">
+
+						<label for="card3"></label>
+						<input type="radio" class="navegar-slide" id="card3" name="btn" value="3">
+					</nav>
+					<aside>
+						<a href="#">Ver mais</a><i class="fa-solid fa-arrow-right"></i>
+					</aside>
+				</div>
+			</section>
+
+		<!-- #SEGUNDA SEÇÃO -->
+			<section class="portfolio">
+				<h3>Portifolio</h3>
+				<h4>Projetos em desenvolvimento</h4>
+				<div class="area-cards">
+					<div class="card">
+						<h4>Analista QA</h4>
+						<a href="#">📁 Repositorio github: A qualidade na entrega</a>
+						<p>
+							Profissional em formação na área de Qualidade de Software. Experiência prática e teórica em: 
+						</p>
+						<ul class="destaque-ferramentas">
+							<li>✅ Testes Unitários e Funcionais</li>						
+							<li>🧪 Escrita de Cenários de Teste</li>						
+							<li>🤝 Apoio ao Desenvolvimento</li>					
+							<li>📋 Metodologias Ágeis </li>					
+							<li>🛠️ Ferramentas de Gestão e Controle</li>
+						</ul>
+					</div>
+
+					<div class="card">
+  				<h4>Desenvolvedor Backend</h4>
+
+					<nav class="lista-repositorio">
+						<ul>
+							<li><a href="#" aria-label="visualize o projeto no github Sobre Controle">📁 Repositório: Sobre Controle</a></li>
+							<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">📁 Repositório: Gestão Empresarial</a></li>
+						</ul>
+					</nav>
+
+					<p>Concluí o curso de desenvolvimento de projetos backend com Node.js, focado na construção de servidores robustos e escaláveis.</p>
+
+					<p>Durante a formação, adquiri conhecimentos práticos nas seguintes tecnologias e práticas:</p>
+
+						<ul class="destaque-ferramentas lista-todos">
+							<li><i class="fab fa-node-js"></i> Node.js</li>
+							<li><i class="fas fa-server"></i> Express.js</li>
+							<li><i class="fas fa-network-wired"></i> API RESTful</li>
+							<li class="escondido"><i class="fas fa-key"></i> Autenticação com JWT</li>
+							<li class="escondido"><i class="fas fa-shield-alt"></i> Segurança de dados</li>
+							<li class="escondido"><i class="fas fa-database"></i> PostgreSQL</li>
+							<li class="escondido"><i class="fas fa-vial"></i> Testes com Jest</li>
+							<li class="escondido"><i class="fas fa-tools"></i> Boas práticas de código</li>
+						</ul>
+					<div id="mostrar-todos"><i class="fa-solid fa-chevron-down"></i></div>
+					<p>Estou preparado para atuar como desenvolvedor backend júnior, contribuindo 	com soluções sólidas e alinhadas às necessidades do time técnico.</p>
+					</div>
+
+
+					<div class="card">
+						<h4>Desenvolvedor Front-End</h4>
+						<nav class="lista-repositorio">
+							<ul>
+								<li><a href="#" aria-label="visite o repositorio no Github">📁 front-end: Sobre Controle </a></li>
+								<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">📁 front-end: Gestão Empresarial</a></li>
+							</ul>
+						</nav>
+						<p>Formado em desenvolvimento frontend com foco em criação de interfaces modernas, responsivas e acessíveis. Durante minha formação, adquiri domínio das principais tecnologias e boas práticas do desenvolvimento web:
+						</p>
+							<ul class="destaque-ferramentas">
+								<li><i></i>HTML5, CSS3 e JavaScript ES6+</li>
+								<li><i class="fab fa-react-js"></i>React.js</li>
+								<li><i></i>Princípios de UX/UI e design responsivo</li>
+							</ul>
+
+						<p>Tenho experiência prática em projetos que simulam ambientes reais de desenvolvimento, com foco em performance, acessibilidade e usabilidade. Estou preparado para contribuir com equipes ágeis e aprender continuamente em ambientes colaborativos.</p>
+					</div>
+
+					<div class="card">
+						<h4>Analista QA</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
+					</div>
+
+
+					<div class="card">
+						<h4>Analista QA</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
+					</div>
+
+
+					<div class="card">
+						<h4>Analista QA</h4>
+						<h5>Projetos em desenvolvimento</h5>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
+					</div>
+				</div>
+			</section>
+
+		<!-- #TERCEIRA SECAO-->
+			<section class="sobre">
+				<div id="apresentacao">
+					<div>
+						<h2>Davi Ribeiro Justo</h2>
+						<p>Brasileiro, 27 anos</p>
+						<p> Sao Paulo - SP, Brasil</p>
+					</div>
+					<div class="perfil">
+						<img src="./public/img/foto_perfil.jpeg" alt="foto do autor">
+					</div>
+				</div>
+				<div class="contexto-sobre">
+					<div>
+						<h3>Objetivos</h3>
+						<p>Estou a procura de uma oportunidade para ingressar no mercado de trabalho, 
+							atundo na minha area de especificação, acredito que meus conhecimento deve 
+							agregar valor a sua equipe e a sua empresa, de modo que possamos juntos
+							desenvolver soluções <span>sustentaveis, inovadoras e brilhantes.</span>
+						</p>
+					
+						<p>Busco sempre melhorar minhas habilidades tecnicas, antenado com o avanço
+							tecnologico, para contribuir com eficiencia a renomeada empresas que trabalho,
+							cumprindo metas, desafios e a colaboração. 
+						</p>
+					</div>
+					<div>
+						<h3>Experiência profissional</h3>
+						<p>Atuei por 6 anos na área administrativa, sempre valorizando o trabalho em equipe e
+						a boa comunicação no ambiente de trabalho, clientes e fornecedores, minhas
+						principais atividades incluíam, faturamento, gestão de frota, geração de relatórios,
+						gerenciamento de risco, gerenciamento dos documentos, emissão de documentos
+						fiscais. Propus soluções consciente e sustentável, otimizando 50% do fluxo de
+						trabalho</p>
+						<P>Empresa: Giovanella Transportes Rodoviário LTDA
+							<br>
+						<Span>Período: 08/06/2018 até 19/04/2024</Span>
+						</p>
+					</div>
+					<div>
+						<h3>SoftSkill</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		<!-- #FOOTER -->
 			<footer class="footer-class">
 				<div>
 					<p>Todos os direitos reservados, <span><a href="#" id="termos">Termos Responsabilidade</a></span></p>
@@ -94,10 +231,23 @@
 
 					<p>desenvolvido por Davi Ribeiro, <span id="ano-atual"></span></p>
 				</div>
-  		</footer>
-			
-			<script src="src/app/homeApp.js"></script> 
-			<script src="src/app/appGlobais.js"></script>
+			</footer>
+		<!-- #JAVASCRIPT -->
+			<script src="src/app/SlideApp.js"></script>
+			<script src="src/app/HomeApp.js">
+			type="application/ld+json">
+				{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Davi Ribeiro Justo",
+				"jobTitle": "Desenvolvedor Front-End",
+				"address": {
+					"addressLocality": "São Paulo",
+					"addressCountry": "BR"
+				},
+				"url": "https://seusite.com"
+			}
+			</script>
 		</main>
 	</body>
 </html>

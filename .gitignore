@@ -1,0 +1,11 @@
+#git iginore variavel ambiente
+
+*.env
+
+#git iginore pasta de testes 
+
+testes/
+
+#git iginore json teste 
+
+teste.json

@@ -1,0 +1,37 @@
+/* variaves para reaproveitamento de cofiguraçoes */
+:root{
+  --todos-links-focus: #c7c6c6bb;
+  --item-lista-hover: linear-gradient(10deg, #c00 25%, #fff 99%);
+  --cor-primaria: linear-gradient(10deg, #0eafe0 10%, black 99%);
+  --font-tamanho-p: font-size: 15px;
+  --font-family: Arial, Helvetica, sans-serif;
+  --background-componentes: #ccc;
+  --li-background: linear-gradient(10deg, red 25%, white 99%)
+}
+body{
+  padding: 0;
+  margin: 0; 
+}
+/* configuraçao geral do header das paginas*/
+
+
+/*#COMPONETES SIMPLES COMPATILHADOS*/
+a {
+  text-decoration: none;
+  font-size: var(--font-tamanho);
+  font-family: var(--font-family);
+}
+
+
+.footer-class{
+  bottom: 0;
+  text-align: center;
+}
+
+.footer-class a{
+  text-decoration: none;
+}
+
+.mostrar-termo{
+  display: none;
+}
