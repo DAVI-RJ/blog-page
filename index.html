@@ -6,13 +6,15 @@
 		<meta name="description" content="Portfólio de Davi Ribeiro Justo, desenvolvedor Full-Stack, testes de qualidade e avaliação UI/UX.">
 
 		<!-- # ESTILIZAÇAO DA PAGINA INTERNO -->
-
+		<link rel="shortcut icon" href="./public/favicon/portifolio.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./src/styles/EstilosGlobais.css">
 		<link rel="stylesheet" href="./src/styles/HomeStyles.css">
 		<link rel="stylesheet" href="./src/styles/Header.css">
 		<link rel="stylesheet" href="./src/styles/FormularioContatos.css">
 		<link rel="stylesheet" href="./src/styles/Slide.css">
-		<link rel="stylesheet" href="src/styles/Portifolio.css">
-
+		<link rel="stylesheet" href="./src/styles/Portifolio.css">
+		<link rel="stylesheet" href="./src/styles/Sobre.css">
+		<link rel="stylesheet" href="./src/styles/Footer.css">
 		<!-- # ESTILIZAÇAO DA PAGINA EXTERNO-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -23,18 +25,19 @@
 		<header>
 			<nav class="navegacao-superior">
 					<ul>
-						<li><a href="#" aria-label="zona de serviços que podem ser contrato">Serviços</a></li>
-						<li><a href="#" aria-label="referencias de projetos desenvolvidos e link github">Portifolio</a></li>
+						<li><a href="#servicos" aria-label="zona de serviços que podem ser contrato">Serviços</a></li>
+						<li><a href="#portfolio" aria-label="referencias de projetos desenvolvidos e link github">Portifolio</a></li>
 						<li><a href="#" aria-label="documentos e artigos, referencias google docs e comunidade devs">Comunidade</a></li>
-						<li><a href="#" aria-label="conheça mais sobre o autor com softskill e experiência profissional">Sobre</a></li>
+						<li><a href="#sobre" aria-label="conheça mais sobre o autor com softskill e experiência profissional">Sobre</a></li>
 						<li><a href="#" aria-label="formulario para contato e links de canais digitais" id="abrir-formulario">Contato</a></li>
 					</ul>
 				</nav>
+			<div class="zona-impacto">
+				<div class="titulo">
+					<h1>#QueroUmaOportunidade</h1>
 				
-			<div class="titulo">
-				<h1>#QueroUmaOportunidade</h1>
-			
-				<h2>Davi Ribeiro Justo</h2>
+					<h2>Davi Ribeiro Justo</h2>
+				</div>
 			</div>
 
 		</header>
@@ -45,7 +48,7 @@
 		<main class="container">
 			
 		<!-- #PRIMEIRA SECAO-->
-			<section class="servicos">
+			<section class="servicos" id="servicos">
 				<div class="slide-area">
 					<div class="card-slide">
 						<h4>Criação  de site</h4>
@@ -84,7 +87,7 @@
 			</section>
 
 		<!-- #SEGUNDA SEÇÃO -->
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<h3>Portifolio</h3>
 				<h4>Projetos em desenvolvimento</h4>
 				<div class="area-cards">
@@ -127,7 +130,7 @@
 							<li class="escondido"><i class="fas fa-vial"></i> Testes com Jest</li>
 							<li class="escondido"><i class="fas fa-tools"></i> Boas práticas de código</li>
 						</ul>
-					<div id="mostrar-todos"><i class="fa-solid fa-chevron-down"></i></div>
+					<div id="mostrar-todos"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-angle-up"></i></div>
 					<p>Estou preparado para atuar como desenvolvedor backend júnior, contribuindo 	com soluções sólidas e alinhadas às necessidades do time técnico.</p>
 					</div>
 
@@ -174,7 +177,7 @@
 			</section>
 
 		<!-- #TERCEIRA SECAO-->
-			<section class="sobre">
+			<section class="sobre" id="sobre">
 				<div id="apresentacao">
 					<div>
 						<h2>Davi Ribeiro Justo</h2>
@@ -224,10 +227,11 @@
 		<!-- #FOOTER -->
 			<footer class="footer-class">
 				<div>
-					<p>Todos os direitos reservados, <span><a href="#" id="termos">Termos Responsabilidade</a></span></p>
+					<p>Todos os direitos reservados, <span><a href="#mostrarTermo" id="termos">Termos Responsabilidade</a></span></p>
 
 					<p class="mostrar-termo" id="mostrarTermo" >Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
 					</p>
+					<p>Referências: Autor: Vecteezy favicone["portfolio"], descrição: aba do navegador, data: 29-09-2025 as 18:35, Disponivel em:<a href="https://www.vecteezy.com/"></a>Vecteezy.com</p>
 
 					<p>desenvolvido por Davi Ribeiro, <span id="ano-atual"></span></p>
 				</div>

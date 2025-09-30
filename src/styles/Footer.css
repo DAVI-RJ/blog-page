@@ -1,0 +1,12 @@
+.footer-class{
+  bottom: 0;
+  text-align: center;
+}
+
+.footer-class a{
+  text-decoration: none;
+}
+
+.mostrar-termo{
+  display: none;
+}

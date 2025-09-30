@@ -1,0 +1,27 @@
+
+#apresentacao {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contexto-sobre {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.perfil{
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 5px auto;
+}
+
+.perfil img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

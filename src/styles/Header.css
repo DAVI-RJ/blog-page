@@ -1,11 +1,15 @@
 /* #HEADER*/  
+:root{
+  --todos-links-focus: #c7c6c6bb;
+  --bg-navegacao-topo: linear-gradient(90deg, blue 10%, rgba(11, 11, 177, 0.822) 30%, rgba(25, 7, 126, 0.884) 99%);
+}
 
 .navegacao-superior{
-	display: flex;
-	border: 2px solid black;
-	justify-content: flex-end;
-	width: 100%;
-	padding: 10px;
+	background: var(--bg-navegacao-topo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -13,19 +17,17 @@
 }
 .navegacao-superior ul {
 	display: flex;
-	padding: 0;
-	margin: 0;
+  gap: 20px;
 }
 
 .navegacao-superior li{
 	margin: 5px;
 	padding: 1px;
-	box-shadow: 0 2px black;
 	text-align: center;
 }
 .navegacao-superior li:hover{
-	background: linear-gradient(10deg, #c00 25%, #fff 99%);
 	transition: 0.6s;
+	animation: focus-line infinite ease 2s;
 }
 .navegacao-superior li a{
 	color: black;
@@ -34,15 +36,30 @@
 }
 .navegacao-superior li a:hover{
 	color: white;
+	
 }
 .navegacao-superior li a:focus {
-  outline: 2px solid #c7c6c6bb;;
+	animation: focus-line 5s infinite linear;
 }
 
+@keyframes focus-line {
+	0% {box-shadow: none } 100% {box-shadow: 0 2px black;;}
+}
+.zona-impacto{
+	background-image: url("../../public/img/imagem-para-o-blog.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: movimentar 25s infinite linear;
+}
+
+@keyframes movimentar {
+	0% { background-position: 75% 50%} 100% {background-position:  25% 25%;}
+	
+}
 .titulo{
 	display: flex;
 	flex-direction: column;
-	background: #f8f8f8;
 	height: 280px;
 	justify-content: center;
 	align-items: center;

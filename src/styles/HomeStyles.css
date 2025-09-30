@@ -1,83 +1,3 @@
-@media (max-width: 768px) {
-	.navegacao-superior {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navegacao-superior ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .area-cards {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .card-slide {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .servicos {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .titulo {
-    height: auto;
-    padding: 20px;
-  }
-}
-@media (max-width: 480px) { 
-	.navegacao-superior {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navegacao-superior ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-	.area-cards {
-    grid-template-columns: repeat(auto, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .card-slide {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .servicos {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .titulo {
-    height: auto;
-    padding: 20px;
-  }
-
-	.escondido li {
-		display: none;
-	}
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-*{
-	box-sizing: border-box;
-	list-style-type: none;
-}
-body{
-	margin: 0;
-	padding: 0;
-}
-header {
-	max-width: 100%;
-}
 
 /* #PRINCIPAL*/
 .container{
@@ -88,24 +8,22 @@ header {
 /*#PRIMEIRA SECAO */
 .servicos{
 	background: #ccc;
-	border: 2px solid black;
 	position: relative;
 	width: 100%;
-	height: auto;
+	padding: 20px;
 }
 .servicos-navegacao {
 	display: flex;
 	justify-content: space-between;
-	position: absolute;
 	width: 100%;
 	bottom: 0;
 }
 /* #SEGUNDA SECAO*/
 .portfolio{
-	border: 2px solid black;
 	position: relative;
 	width: 100%;
-	height: auto;
+	padding: 20px;
+	/*height: auto;*/
 }
 
 /* #TERCEIRA SECAO*/
@@ -114,33 +32,9 @@ header {
 	flex-direction: column;
 	position: relative;
 	width: 100%;
+	padding: 20px;
 }
 
-#apresentacao {
-	display: flex;
-	justify-content: space-between;
-	height: auto;
-}
-.contexto-sobre {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-}
-
-.perfil{
-	position: relative;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin: 5px;
-}
-
-.perfil img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	border-radius: 50%;
-}
 
 
 /*qualidades
@@ -162,73 +56,3 @@ header {
 	opacity: 1;	
 	transition: opacity 3s ease-in-out ;
 }
-*/
-/*css contatos 
-.contatos{
-	display: none;
-	text-align: center;
-	padding: 10px;
-	margin: 0px;
-}
-
-.contatos ul{
-	margin: 5px;
-	padding: 0;
-}
-.contatos li {
-	padding: 5px;
-	margin: 5px;
-	background: #ccc;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-}
-
-.contatos li:hover{
-	background: linear-gradient(10deg, red 25%, white 99%);
-	transition: 0,3s;
-}
-
-.contatos li a{
-	color: black;
-	text-decoration: none;
-	font-size: 18px;
-}
-.contatos li a:hover{
-	color: white;
-	transition: 0,6s;
-}
-*/
-/*conteudo do centro
-
-/*menu lateral para navegação outras paginas pagina
-
-*/
-/*conteudo do centro
-.flex-container{
-	background: linear-gradient(72deg, #ccc 10%, white 99%);
-	display: flex;
-	flex-direction: column;
-}
-	*/
-/* conteundo de apresençao cv
-.apresentacao{
-	height: 100%;
-	width: 100%;
-	max-width: 100%;
-}
-
-.section-class{
-	border-radius: 5px;
-	margin: 10px;
-	padding: 5px;
-	box-shadow: 0 3px black;
-	border: 2px solid #ccc;
-}
-
-.section-class p{
-	text-align: justify;
-	font-size: 16px;
-	padding: 10px;
-	font-weight: 500;
-}
-*/
