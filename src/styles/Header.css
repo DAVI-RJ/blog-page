@@ -1,8 +1,4 @@
 /* #HEADER*/  
-:root{
-  --todos-links-focus: #c7c6c6bb;
-  --bg-navegacao-topo: linear-gradient(90deg, blue 10%, rgba(11, 11, 177, 0.822) 30%, rgba(25, 7, 126, 0.884) 99%);
-}
 
 .navegacao-superior{
 	background: var(--bg-navegacao-topo);
@@ -13,17 +9,25 @@
 	position: sticky;
 	top: 0;
 	z-index: 1000;
-	
 }
+#botao-menu-site {
+	visibility: hidden;
+	margin: 5px;
+}
+
 .navegacao-superior ul {
 	display: flex;
-  gap: 20px;
+	gap: 20px;
 }
 
 .navegacao-superior li{
 	margin: 5px;
 	padding: 1px;
 	text-align: center;
+	animation: tela-menores 2s left ease-in;
+}
+@keyframes tela-menores {
+	100% {visibility: visible;}
 }
 .navegacao-superior li:hover{
 	transition: 0.6s;
@@ -32,7 +36,6 @@
 .navegacao-superior li a{
 	color: black;
 	text-decoration: none;
-	font-size: 18px;
 }
 .navegacao-superior li a:hover{
 	color: white;
@@ -46,6 +49,7 @@
 	0% {box-shadow: none } 100% {box-shadow: 0 2px black;;}
 }
 .zona-impacto{
+	position: relative;
 	background-image: url("../../public/img/imagem-para-o-blog.jpg");
 	background-size: cover;
 	background-position: center;
@@ -65,6 +69,6 @@
 	align-items: center;
 }
 .titulo  > h1, h2{
-	text-align: center;
-	margin: 0;
+	text-align: justify;
+	margin: 2px;
 }

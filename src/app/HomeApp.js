@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const menuHeader = document.getElementById("menu-navegacao-site");
+  const botaoMenuHeader = document.getElementById("botao-menu-site");
+
+  if(menuHeader && botaoMenuHeader){
+    botaoMenuHeader.addEventListener("click", () => {
+     const mostraMenu = botaoMenuHeader.getAttribute("aria-expanded") === "true";
+     menuHeader.setAttribute("aria-expanded", !mostraMenu); 
+     menuHeader.hidden = mostraMenu
+    });
+  }
 
   /* #FORMULARIO INTERAÇÃO*/
   const abrirForm = document.getElementById("abrir-formulario");

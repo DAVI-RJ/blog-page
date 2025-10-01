@@ -7,7 +7,7 @@
 
 		<!-- # ESTILIZAÇAO DA PAGINA INTERNO -->
 		<link rel="shortcut icon" href="./public/favicon/portifolio.ico" type="image/x-icon">
-		<link rel="stylesheet" href="./src/styles/EstilosGlobais.css">
+		
 		<link rel="stylesheet" href="./src/styles/HomeStyles.css">
 		<link rel="stylesheet" href="./src/styles/Header.css">
 		<link rel="stylesheet" href="./src/styles/FormularioContatos.css">
@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./src/styles/Portifolio.css">
 		<link rel="stylesheet" href="./src/styles/Sobre.css">
 		<link rel="stylesheet" href="./src/styles/Footer.css">
+		<link rel="stylesheet" href="./src/styles/EstilosGlobais.css">
 		<!-- # ESTILIZAÇAO DA PAGINA EXTERNO-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -23,8 +24,11 @@
 	<body>
 	<!--#CABEÇALHO -->
 		<header>
-			<nav class="navegacao-superior">
-					<ul>
+				<nav class="navegacao-superior">
+				
+					<button id="botao-menu-site" aria-controls="menu-navegacao-site" aria-expanded="false">Menu</button>
+				
+					<ul id="menu-navegacao-site" hidden>
 						<li><a href="#servicos" aria-label="zona de serviços que podem ser contrato">Serviços</a></li>
 						<li><a href="#portfolio" aria-label="referencias de projetos desenvolvidos e link github">Portifolio</a></li>
 						<li><a href="#" aria-label="documentos e artigos, referencias google docs e comunidade devs">Comunidade</a></li>
@@ -32,6 +36,7 @@
 						<li><a href="#" aria-label="formulario para contato e links de canais digitais" id="abrir-formulario">Contato</a></li>
 					</ul>
 				</nav>
+
 			<div class="zona-impacto">
 				<div class="titulo">
 					<h1>#QueroUmaOportunidade</h1>

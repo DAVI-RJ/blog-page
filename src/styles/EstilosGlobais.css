@@ -1,6 +1,8 @@
 /* variaves para reaproveitamento de cofiguraçoes */
 :root{
   --todos-links-focus: #c7c6c6bb;
+  --bg-navegacao-topo: linear-gradient(90deg, rgba(6, 6, 94, 0.863) 10%, #0000ff 30%,  rgba(167, 38, 38, 0.575) 99%);
+  --todos-links-focus: #c7c6c6bb;
   --cor-primaria: linear-gradient(10deg, #0eafe0 10%, black 99%);
   --font-tamanho-p: font-size: 15px;
   --font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +12,7 @@
 /*#RESPONSIVO LAYOUT*/
 @media (max-width: 768px) {
   .area-cards {
-  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  	grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 
   .card-slide {
@@ -28,37 +30,41 @@
     padding: 20px;
   }
 }
-@media (max-width: 600px) {
-  .slide-area {
-    height: auto;
-  }
 
-  .card-slide {
-    max-width: 90%;
-    height: auto;
+@media (max-width: 480px) { 
+  /*# LAYOUT E BOTAO DE NAVEGAÇÃO DO HEADER*/
+  #botao-menu-site {
+    visibility: visible;
+    left: 0px;
+	  padding: 5px;
   }
-
+  .navegacao-superior {
+    min-height: 10px;
+  }
+  .navegacao-superior ul {
+    display: none;
+  }
   .titulo {
     height: auto;
     padding: 20px;
   }
 
-  .navegacao-superior ul {
+  /* #LAYOUT E SLIDE DA SEÇAO SERVIÇOS*/
+  .servicos {
     flex-direction: column;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 480px) { 
-	.navegacao-superior {
-    flex-direction: column;
-    align-items: center;
   }
 
-  .navegacao-superior ul {
-    flex-direction: column;
-    gap: 10px;
+  .slide-area {
+    height: auto;
+    min-height: 280px;
   }
+  .card-slide {
+    max-width: 90%;
+    height: auto;
+    max-height: 250px;
+    
+  }
+  /*#LAYOUT DA SEÇAO PORTFOLIO*/
 	.area-cards {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
@@ -68,17 +74,10 @@
     transform: translateX(-50%);
   }
 
-  .servicos {
-    flex-direction: column;
-  }
-
-  .titulo {
-    padding: 20px;
-  }
-
 	.escondido li {
 		display: none;
 	}
+  /*#LAYOUT DA SEÇAO SOBRE*/
 }
 
 
