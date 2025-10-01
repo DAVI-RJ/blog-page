@@ -1,12 +1,18 @@
 .footer-class{
+  display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	gap: 20px;
+  padding: 20px;
   bottom: 0;
-  text-align: center;
 }
-
-.footer-class a{
-  text-decoration: none;
+.referencias{
+  border: 2px solid black;
 }
-
+.direitos-autorais {
+  grid-column: span 2;
+}
 .mostrar-termo{
-  display: none;
+  text-align: center;
+  background: #ccc;
+  grid-column: span 2;
 }

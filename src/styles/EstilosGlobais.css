@@ -29,6 +29,9 @@
     height: auto;
     padding: 20px;
   }
+  .titulo h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 480px) { 
