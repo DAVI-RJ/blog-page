@@ -9,22 +9,23 @@
 	overflow: visible;
 }
 .card-slide{
-	width: 90%;
+	width: 100%;
   max-width: 250px;
   height: auto;
   aspect-ratio: 1 / 1;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: absolute; 
 	left: calc(50% - 125px);
 	top: 10px;
   transition: transform 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
   backface-visibility: hidden;
 	padding: 16px;
-	box-sizing: border-box;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
+.card-slide h4{
+	margin-bottom: 5px;
+}
 .card-selecionado{
 	transform: translateZ(120px) scale(1); 
 	filter: blur(0);

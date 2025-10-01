@@ -25,12 +25,13 @@
 	<!--#CABEÇALHO -->
 		<header>
 				<nav class="navegacao-superior">
+	
+					<button id="botao-menu-site" aria-controls="menu-navegacao-site" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+					<!-- i class="fa-light fa-bars fa-flip" style="color: #044271;" ></i>-->
 				
-					<button id="botao-menu-site" aria-controls="menu-navegacao-site" aria-expanded="false">Menu</button>
-				
-					<ul id="menu-navegacao-site" hidden>
+					<ul id="menu-navegacao-site" class="menu-navegacao-site">
 						<li><a href="#servicos" aria-label="zona de serviços que podem ser contrato">Serviços</a></li>
-						<li><a href="#portfolio" aria-label="referencias de projetos desenvolvidos e link github">Portifolio</a></li>
+						<li><a href="#portfolio" aria-label="referencias de projetos desenvolvidos e link github">Portfolio</a></li>
 						<li><a href="#" aria-label="documentos e artigos, referencias google docs e comunidade devs">Comunidade</a></li>
 						<li><a href="#sobre" aria-label="conheça mais sobre o autor com softskill e experiência profissional">Sobre</a></li>
 						<li><a href="#" aria-label="formulario para contato e links de canais digitais" id="abrir-formulario">Contato</a></li>
@@ -58,19 +59,25 @@
 					<div class="card-slide">
 						<h4>Criação  de site</h4>
 						<h5>Projetos em desenvolvimento</h5>
-						<p>Criação de sites para negocios.</p>
+						<p>Criação de sites para markting Web.</p>
 					</div>
 			
 					<div class="card-slide"> 	
 						<h4>Teste de Qualidade</h4>
 						<h5>Projetos em desenvolvimento</h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						<p>Testes unitarios, Funcionais, interação.</p>
 					</div>
 
 					<div class="card-slide"> 	
 						<h4>Avaliação UI / UX</h4>
 						<h5>Projetos em desenvolvimento</h5>
-						<p>Lorem ipsum dolor sit amet consectetur. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti.</p>
+						<p>Mantenha a qualidade do seu publico em alta.</p>
+					</div>
+
+					<div class="card-slide"> 	
+						<h4>Software e automoção</h4>
+						<h5>soluções inteligente para sua empresa</h5>
+						<p>Agrega valor e utilize seu tempo para oque realmente importa.</p>
 					</div>
 				</div>
 			<!-- #CONFIGURAÇAO DO SLIDE REF. CSS - HomeStyles.css-->
@@ -98,16 +105,16 @@
 				<div class="area-cards">
 					<div class="card">
 						<h4>Analista QA</h4>
-						<a href="#">📁 Repositorio github: A qualidade na entrega</a>
+						<a href="#">Repositorio github: A qualidade na entrega</a>
 						<p>
 							Profissional em formação na área de Qualidade de Software. Experiência prática e teórica em: 
 						</p>
 						<ul class="destaque-ferramentas">
-							<li>✅ Testes Unitários e Funcionais</li>						
-							<li>🧪 Escrita de Cenários de Teste</li>						
-							<li>🤝 Apoio ao Desenvolvimento</li>					
-							<li>📋 Metodologias Ágeis </li>					
-							<li>🛠️ Ferramentas de Gestão e Controle</li>
+							<li>Testes Unitários e Funcionais</li>						
+							<li>Escrita de Cenários de Teste</li>						
+							<li>Apoio ao Desenvolvimento</li>					
+							<li>Metodologias Ágeis </li>					
+							<li>Ferramentas de Gestão e Controle</li>
 						</ul>
 					</div>
 
@@ -116,8 +123,8 @@
 
 					<nav class="lista-repositorio">
 						<ul>
-							<li><a href="#" aria-label="visualize o projeto no github Sobre Controle">📁 Repositório: Sobre Controle</a></li>
-							<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">📁 Repositório: Gestão Empresarial</a></li>
+							<li><a href="#" aria-label="visualize o projeto no github Sobre Controle">Repositório: Sobre Controle</a></li>
+							<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">Repositório: Gestão Empresarial</a></li>
 						</ul>
 					</nav>
 
@@ -126,16 +133,16 @@
 					<p>Durante a formação, adquiri conhecimentos práticos nas seguintes tecnologias e práticas:</p>
 
 						<ul class="destaque-ferramentas lista-todos">
-							<li><i class="fab fa-node-js"></i> Node.js</li>
-							<li><i class="fas fa-server"></i> Express.js</li>
-							<li><i class="fas fa-network-wired"></i> API RESTful</li>
-							<li class="escondido"><i class="fas fa-key"></i> Autenticação com JWT</li>
-							<li class="escondido"><i class="fas fa-shield-alt"></i> Segurança de dados</li>
-							<li class="escondido"><i class="fas fa-database"></i> PostgreSQL</li>
-							<li class="escondido"><i class="fas fa-vial"></i> Testes com Jest</li>
-							<li class="escondido"><i class="fas fa-tools"></i> Boas práticas de código</li>
+							<li></i> Node.js</li>
+							<li></i> Express.js</li>
+							<li></i> API RESTful</li>
+							<li class="escondido">Autenticação com JWT</li>
+							<li class="escondido">Segurança de dados</li>
+							<li class="escondido">PostgreSQL</li>
+							<li class="escondido">Testes com Jest</li>
+							<li class="escondido">Boas práticas de código</li>
 						</ul>
-					<div id="mostrar-todos"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-angle-up"></i></div>
+					<div id="mostrar-todos" aria-controls="lista-todos" aria-expanded="false"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-angle-up"></i></div>
 					<p>Estou preparado para atuar como desenvolvedor backend júnior, contribuindo 	com soluções sólidas e alinhadas às necessidades do time técnico.</p>
 					</div>
 
@@ -144,40 +151,21 @@
 						<h4>Desenvolvedor Front-End</h4>
 						<nav class="lista-repositorio">
 							<ul>
-								<li><a href="#" aria-label="visite o repositorio no Github">📁 front-end: Sobre Controle </a></li>
-								<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">📁 front-end: Gestão Empresarial</a></li>
+								<li><a href="#" aria-label="visite o repositorio no Github">front-end: Sobre Controle </a></li>
+								<li><a href="#" aria-label="visualize o projeto no github Gestão Empresarial">front-end: Gestão Empresarial</a></li>
 							</ul>
 						</nav>
 						<p>Formado em desenvolvimento frontend com foco em criação de interfaces modernas, responsivas e acessíveis. Durante minha formação, adquiri domínio das principais tecnologias e boas práticas do desenvolvimento web:
 						</p>
 							<ul class="destaque-ferramentas">
-								<li><i></i>HTML5, CSS3 e JavaScript ES6+</li>
-								<li><i class="fab fa-react-js"></i>React.js</li>
-								<li><i></i>Princípios de UX/UI e design responsivo</li>
+								<li>HTML5, CSS3 e JavaScript ES6+</li>
+								<li>React.js</li>
+								<li>Princípios de UX/UI e design responsivo</li>
 							</ul>
 
 						<p>Tenho experiência prática em projetos que simulam ambientes reais de desenvolvimento, com foco em performance, acessibilidade e usabilidade. Estou preparado para contribuir com equipes ágeis e aprender continuamente em ambientes colaborativos.</p>
-					</div>
-
-					<div class="card">
-						<h4>Analista QA</h4>
-						<h5>Projetos em desenvolvimento</h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
-					</div>
-
-
-					<div class="card">
-						<h4>Analista QA</h4>
-						<h5>Projetos em desenvolvimento</h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
-					</div>
-
-
-					<div class="card">
-						<h4>Analista QA</h4>
-						<h5>Projetos em desenvolvimento</h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maxime facere dicta nesciunt autem libero dolores quisquam ad, eos corrupti, eius rerum fugiat vitae excepturi veritatis dolore tenetur ratione nulla.</p>
-					</div>
+						</div>
+					
 				</div>
 			</section>
 
@@ -232,10 +220,11 @@
 		<!-- #FOOTER -->
 			<footer class="footer-class">
 				<div class="referencias">
-					<p>Referências: Autor: Vecteezy favicone["portfolio"], descrição: aba do navegador, data: 29-09-2025 as 18:35, Disponivel em:<a href="https://www.vecteezy.com/"></a>Vecteezy.com</p>
+					<p>Referências</p>
+					<p>Autor: Vecteezy favicone["portfolio"], descrição: aba do navegador, data: 29-09-2025 as 18:35, Disponivel em: <a href="https://www.vecteezy.com/">Vecteezy.com</a></p>
 				</div>
-				<div class="mostrar-termo">
-					<p id="mostrarTermo" >Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
+				<div class="mostrar-termo" id="mostrar-termo">
+					<p>Esse projeto foi desenvolvido para fins didaticos e para divulgação conciente do meu curriculo, todos os dados contido nessa obra são reais, quaisquer, dados que seja usado de forma indevida estara sujeito a juridição. Aparti do momento que o sujeito aceita os termos, faz parte da sua resposabilidade manter os mesmo dados em seguraça.
 					</p>
 				</div>
 				<div class="direitos-autorais">

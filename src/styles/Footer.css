@@ -9,9 +9,11 @@
   border: 2px solid black;
 }
 .direitos-autorais {
+  text-align: center;
   grid-column: span 2;
 }
 .mostrar-termo{
+  display: none;
   text-align: center;
   background: #ccc;
   grid-column: span 2;

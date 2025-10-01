@@ -36,16 +36,25 @@
 
 @media (max-width: 480px) { 
   /*# LAYOUT E BOTAO DE NAVEGAÇÃO DO HEADER*/
-  #botao-menu-site {
-    visibility: visible;
-    left: 0px;
-	  padding: 5px;
-  }
   .navegacao-superior {
-    min-height: 10px;
+    position: relative;
   }
-  .navegacao-superior ul {
-    display: none;
+
+   #botao-menu-site {
+    position: absolute;
+	  top: 0%;
+	  left: 0%;
+    visibility: visible;
+    
+  }
+  .menu-navegacao-site{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+  }
+  .menu-navegacao-site.menu-ativo {
+    width: 100%;
+    max-height: 500px;
   }
   .titulo {
     height: auto;

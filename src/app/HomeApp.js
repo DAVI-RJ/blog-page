@@ -3,10 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const botaoMenuHeader = document.getElementById("botao-menu-site");
 
   if(menuHeader && botaoMenuHeader){
+    let mostrarMenu = botaoMenuHeader.getAttribute("aria-expanded") === "true";
     botaoMenuHeader.addEventListener("click", () => {
-     const mostraMenu = botaoMenuHeader.getAttribute("aria-expanded") === "true";
-     menuHeader.setAttribute("aria-expanded", !mostraMenu); 
-     menuHeader.hidden = mostraMenu
+      mostrarMenu = !mostrarMenu
+      
+      console.log(mostrarMenu)
+      if(mostrarMenu){
+        menuHeader.classList.toggle("menu-ativo")
+      }else{
+        menuHeader.classList.remove("menu-ativo")
+      }
+      menuHeader.setAttribute("aria-expanded", mostrarMenu.toString());
+      console.log(menuHeader)
     });
   }
 
@@ -46,30 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
 
-  /*# FOORTER INTERAÇOES*/
-  const termo = document.getElementById("termos");
-  const showTermo = document.getElementById("mostrarTermo");
-  let isTermo = false;
-
-  if (termo && showTermo) {
-    termo.addEventListener('click', () => {
-      isTermo = !isTermo;
-      showTermo.style.display = (isTermo) ? "block" : "none";
-    });
-  } 
-
-  const anoAtual = document.getElementById("ano-atual");
-  if(anoAtual){
-  function dataFooter(){
-    const dataAtual = new Date();
-    const anoData = dataAtual.getFullYear();
-
-      anoAtual.innerHTML = anoData;
-    }
-  }
-  dataFooter();
-  
-
   const mostrarIntens = document.getElementById("mostrar-todos");
   const todosIntens = document.getElementsByClassName("escondido");
   let isMostrado = false
@@ -87,6 +71,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     mostrandoTodosIntens()
   }
-  
+  /*# FOORTER INTERAÇOES*/
+  const termo = document.getElementById("termos");
+  const showTermo = document.getElementById("mostrar-termo");
+
+  if (termo && showTermo) {
+  let isTermo = false;
+    termo.addEventListener("click", () => {
+      isTermo = !isTermo;
+      showTermo.style.display = isTermo ? "block" : "none";
+    });
+  } 
+
+  const anoAtual = document.getElementById("ano-atual");
+  if(anoAtual){
+  function dataFooter(){
+    const dataAtual = new Date();
+    const anoData = dataAtual.getFullYear();
+
+      anoAtual.innerHTML = anoData;
+    }
+  dataFooter();
+  }
 });
 

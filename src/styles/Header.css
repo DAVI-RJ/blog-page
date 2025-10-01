@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+	font-size: 18px;
   flex-wrap: wrap;
 	position: sticky;
 	top: 0;
@@ -12,15 +13,26 @@
 }
 #botao-menu-site {
 	visibility: hidden;
-	margin: 5px;
+	font-size: 18px;
+	padding: 10px;
+	background: none;
+	border: 0;
 }
-
-.navegacao-superior ul {
+#botao-menu-site i {
+	color: white;
+	margin: 0 5px;
+}
+.menu-navegacao-site {
 	display: flex;
 	gap: 20px;
 }
+.menu-ativo {
+	display: flex;
+	flex-direction: column;
+	background: brown;
+}
 
-.navegacao-superior li{
+.menu-navegacao-site li{
 	margin: 5px;
 	padding: 1px;
 	text-align: center;
@@ -29,19 +41,16 @@
 @keyframes tela-menores {
 	100% {visibility: visible;}
 }
-.navegacao-superior li:hover{
+.menu-navegacao-site li:hover{
 	transition: 0.6s;
-	animation: focus-line infinite ease 2s;
 }
-.navegacao-superior li a{
+.menu-navegacao-site li a{
 	color: black;
 	text-decoration: none;
 }
-.navegacao-superior li a:hover{
+.menu-navegacao-site li a:hover,
+.menu-navegacao-site li a:focus {
 	color: white;
-	
-}
-.navegacao-superior li a:focus {
 	animation: focus-line 5s infinite linear;
 }
 
@@ -69,7 +78,7 @@
 	align-items: center;
 }
 .titulo  > h1, h2{
-	text-shadow: 1px 1px 2px (0,0,0,0.3);
+	text-shadow: 1px 1px 2px (0,0,0,0.5);
 	text-align: justify;
 	color: white;
 	margin: 2px;
