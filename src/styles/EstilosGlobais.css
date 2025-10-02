@@ -9,6 +9,25 @@
   --background-componentes: #ccc;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+*{
+	box-sizing: border-box;
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+body{
+	font-family: sans-serif;
+  line-height: 1.6;
+}
+header {
+	max-width: 100%;
+}
+
+
 /*#RESPONSIVO LAYOUT*/
 @media (max-width: 768px) {
   .area-cards {
@@ -52,6 +71,9 @@
     height: auto;
     padding: 2%;
   }
+  .titulo h1{
+    font-size: 1em;
+  }
   
 
   /* #LAYOUT E SLIDE DA SEÇAO SERVIÇOS*/
@@ -93,21 +115,3 @@
   }
 }
 
-
-html {
-	scroll-behavior: smooth;
-}
-
-*{
-	box-sizing: border-box;
-	list-style-type: none;
-	margin: 0;
-  padding: 0;
-}
-body{
-	font-family: sans-serif;
-  line-height: 1.6;
-}
-header {
-	max-width: 100%;
-}

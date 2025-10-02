@@ -78,8 +78,6 @@
 	align-items: center;
 }
 .titulo  > h1	{
-	text-shadow: 1px 1px 2px rgb(190, 189, 189);
-	font-size: 1em;
 	text-align: justify;
 	color: white;
 	margin: 2px;

@@ -1,17 +1,21 @@
 .footer-class{
   width: 100%;
   display: grid;
-	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
   padding: 20px;
   bottom: 0;
+  background: black;
 }
 .referencias{
+  color: white;
   border: 2px solid black;
 }
 .direitos-autorais {
+  color: white;
+  bottom: 0;
   text-align: center;
-  grid-column: span 2;
+  grid-column: span 4;
 }
 .mostrar-termo{
   display: none;
