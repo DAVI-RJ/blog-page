@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   const menuHeader = document.getElementById("menu-navegacao-site");
   const botaoMenuHeader = document.getElementById("botao-menu-site");
 
-  if(menuHeader && botaoMenuHeader){
-    let mostrarMenu = botaoMenuHeader.getAttribute("aria-expanded") === "true";
+  if (menuHeader && botaoMenuHeader) {
     botaoMenuHeader.addEventListener("click", () => {
-      mostrarMenu = !mostrarMenu
-      
-      console.log(mostrarMenu)
-      if(mostrarMenu){
-        menuHeader.classList.toggle("menu-ativo")
-      }else{
-        menuHeader.classList.remove("menu-ativo")
+      const isExpanded = botaoMenuHeader.getAttribute("aria-expanded") === "true";
+
+      if (!isExpanded) {
+        menuHeader.classList.add("menu-ativo");
+      } else {
+        menuHeader.classList.remove("menu-ativo");
       }
-      menuHeader.setAttribute("aria-expanded", mostrarMenu.toString());
-      console.log(menuHeader)
+
+      botaoMenuHeader.setAttribute("aria-expanded", (!isExpanded).toString());
     });
   }
+
 
   /* #FORMULARIO INTERAÇÃO*/
   const abrirForm = document.getElementById("abrir-formulario");

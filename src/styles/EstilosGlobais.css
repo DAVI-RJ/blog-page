@@ -1,11 +1,14 @@
 /* variaves para reaproveitamento de cofiguraçoes */
 :root{
   --todos-links-focus: #c7c6c6bb;
+  --link-font: 18px; 
   --bg-navegacao-topo: linear-gradient(90deg, rgba(6, 6, 94, 0.863) 10%, #0000ff 30%,  rgba(167, 38, 38, 0.575) 99%);
   --todos-links-focus: #c7c6c6bb;
-  --cor-primaria: linear-gradient(10deg, #0eafe0 10%, black 99%);
   --font-tamanho-p: font-size: 15px;
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-family: sans-serif;
+  --background-section: #ccccccd8;
+  --cor-card-portfolio: linear-gradient(180deg, rgba(255, 252, 252, 0.89) 10%, #d5eff7e1 99%);
+  --conteudo-section-sobre: white;
   --background-componentes: #ccc;
 }
 
@@ -20,7 +23,7 @@ html {
   padding: 0;
 }
 body{
-	font-family: sans-serif;
+	font-family: var(--font-family);
   line-height: 1.6;
 }
 header {
@@ -47,6 +50,49 @@ header {
 
 @media (max-width: 480px) { 
   /*# LAYOUT E BOTAO DE NAVEGAÇÃO DO HEADER*/
+
+  .navegacao-superior {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+
+  #botao-menu-site {
+    visibility: visible;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .menu-navegacao-site {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .menu-navegacao-site.menu-ativo {
+    display: flex;
+  }
+
+  .menu-navegacao-site li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-navegacao-site li a {
+    display: block;
+    width: 100%;
+  }
+
+
+  /*
   .navegacao-superior {
     position: relative;
   }
@@ -56,7 +102,6 @@ header {
 	  top: 0%;
 	  left: 0%;
     visibility: visible;
-    
   }
   .menu-navegacao-site{
     max-height: 0;
@@ -65,8 +110,8 @@ header {
   }
   .menu-navegacao-site.menu-ativo {
     width: 100%;
-    max-height: 500px;
-  }
+    max-height: 100%;
+  }*/
   .titulo {
     height: auto;
     padding: 2%;

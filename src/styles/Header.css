@@ -24,8 +24,9 @@
 }
 .menu-navegacao-site {
 	display: flex;
-	gap: 20px;
+	gap: 10px;
 }
+
 .menu-ativo {
 	display: flex;
 	flex-direction: column;
@@ -33,7 +34,7 @@
 
 .menu-navegacao-site li{
 	margin: 5px;
-	padding: 1px;
+	padding: 0 10px;
 	text-align: center;
 	animation: tela-menores 2s left ease-in;
 }
@@ -45,13 +46,14 @@
 	transition: 0.6s;
 }
 .menu-navegacao-site li a{
+	font-size: var(--link-font);
 	color: black;
 	text-decoration: none;
 }
 .menu-navegacao-site li a:hover,
 .menu-navegacao-site li a:focus {
 	color: white;
-	animation: focus-line 5s infinite linear;
+	animation: focus-line 3s infinite linear;
 }
 
 @keyframes focus-line {
