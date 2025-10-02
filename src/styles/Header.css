@@ -29,7 +29,6 @@
 .menu-ativo {
 	display: flex;
 	flex-direction: column;
-	background: brown;
 }
 
 .menu-navegacao-site li{
@@ -41,6 +40,7 @@
 @keyframes tela-menores {
 	100% {visibility: visible;}
 }
+
 .menu-navegacao-site li:hover{
 	transition: 0.6s;
 }
@@ -77,8 +77,9 @@
 	justify-content: center;
 	align-items: center;
 }
-.titulo  > h1, h2{
-	text-shadow: 1px 1px 2px (0,0,0,0.5);
+.titulo  > h1	{
+	text-shadow: 1px 1px 2px rgb(190, 189, 189);
+	font-size: 1em;
 	text-align: justify;
 	color: white;
 	margin: 2px;

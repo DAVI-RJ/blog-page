@@ -24,14 +24,6 @@
     flex-direction: column;
     height: auto;
   }
-
-  .titulo {
-    height: auto;
-    padding: 20px;
-  }
-  .titulo h1 {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 480px) { 
@@ -58,8 +50,9 @@
   }
   .titulo {
     height: auto;
-    padding: 20px;
+    padding: 2%;
   }
+  
 
   /* #LAYOUT E SLIDE DA SEÇAO SERVIÇOS*/
   .servicos {
@@ -90,6 +83,14 @@
 		display: none;
 	}
   /*#LAYOUT DA SEÇAO SOBRE*/
+  .contexto-sobre{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /*#FOOTER LAYOUT*/
+  .footer-class {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 
 
