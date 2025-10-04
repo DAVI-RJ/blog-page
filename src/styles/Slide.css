@@ -41,20 +41,16 @@ filter: blur(3px);
 }
 .card-selecionado{
 	transform: translateZ(120px) scale(1); 
-	
-	
 	z-index: 10;
 }
 .card-anterior{
 	transform: translateX(-260px) rotateY(30deg) scale(0.85); 
-	
-	
+	filter: blur(3px); 
 	z-index: 5;
 }
 
 .card-proximo {
 	transform: translateX(260px) rotateY(-30deg) scale(0.85); 
-	
-	
+	filter: blur(3px); 
 	z-index: 5;
 }
