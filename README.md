@@ -1,8 +1,10 @@
-# Portfolio Davi Justo
+# CV Davi Justo
 
 ## Apresentação 
  
- Olá, a tecnologia está em constante desenvolvimento, assim como meu portfolio, busco cada dia mais e mais desenvolver minhas habilidades. 
+ Olá, a tecnologia está em constante desenvolvimento, assim como meu portfolio, busco cada dia mais e mais desenvolver minhas habilidades.
+
+ Atualmente estou estudando ADS, concluindo o curso da AWS.  
 
  ## Tecnologias Utilizadas
  - HTML
@@ -21,3 +23,7 @@ blog-page/
     └── styles/        # Estilos gerais 
 
 ```
+## link para acessar
+
+https://davi-rj.github.io/blog-page/
+
