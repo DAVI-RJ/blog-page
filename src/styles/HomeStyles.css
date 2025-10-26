@@ -38,25 +38,3 @@
 	padding: 2%;
 	background: var(--background-section);
 }
-
-
-
-/*qualidades
-.qualidades{
-	font-weight: 600;
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	color: white;
-	width: 400px;
-}
-
-.animacao-paragrafo{
-	opacity: 0;
-	
-}
-
-.animacao-paragrafoOn{
-	opacity: 1;	
-	transition: opacity 3s ease-in-out ;
-}
