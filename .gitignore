@@ -9,3 +9,8 @@ testes/
 #git iginore json teste 
 
 teste.json
+
+# git iginore pasta private 
+
+private/
+FormContato.js
