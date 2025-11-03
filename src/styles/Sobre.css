@@ -3,9 +3,10 @@
 .apresentacao {
 	width: 100%;
 	display: flex;
-	background: var(--conteudo-section-sobre);
+	background: var(--conteudo-section);
 	border-radius: 5px;
 	padding: 10px;
+	text-align: center;
 	justify-content: space-between;
 }
 
@@ -24,12 +25,19 @@
 	object-fit:cover;
 }
 .contexto-sobre {
-	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(200px, 1fr));
-	background: var(--conteudo-section-sobre);
-	text-align: justify;
-	padding: 10px;
+	grid-template-columns: 1fr 1fr;
+	background: var(--conteudo-section);
 	gap: 20px;
 	margin-top: 2px;
+}
+.experiencia-objetivo h3{
+	text-align: center;
+	grid-template-rows: auto;
+	box-shadow: rgba(255, 255, 255, 0.953) 0px 2px;
+}
+.experiencia-objetivo p {
+	text-indent: 1.5em;
+	text-align: justify;
+	padding: 10px;
 }

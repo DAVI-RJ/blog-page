@@ -14,8 +14,8 @@
   max-width: 250px;
   height: auto;
   aspect-ratio: 1 / 1;
-  background: black;
-	color: white;
+  background: snow;
+	color: black;
   border-radius: 10px;
   position: absolute; 
 	left: calc(50% - 125px);
