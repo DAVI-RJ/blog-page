@@ -11,9 +11,13 @@
 	width: 800px;
 }
 
-.apresentacao > div h2, p {
+.apresentacao > div{
 	text-align: center;
+	justify-content: center;
 } 
+.apresentacao h3 {
+	margin-top: 20px;
+}
 
 .perfil{
 	max-height: 200px;

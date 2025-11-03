@@ -22,8 +22,9 @@
 	top: 10px;
   transition: transform 0.5s ease; 
 	backface-visibility: hidden;
-	padding: 16px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	border: 2px solid black;
+	box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.581);
 }
 /*
 filter 0.5s, opacity 0.1s ease-out;
@@ -44,6 +45,7 @@ filter: blur(3px);
 	z-index: 10;
 }
 .card-anterior{
+	color: #ccc;
 	transform: translateX(-260px) rotateY(30deg) scale(0.85); 
 	filter: blur(3px); 
 	z-index: 5;
