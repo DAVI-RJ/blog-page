@@ -4,11 +4,16 @@
 	width: 100%;
 	display: flex;
 	background: var(--conteudo-section);
-	border-radius: 5px;
 	padding: 10px;
-	text-align: center;
 	justify-content: space-between;
 }
+.apresentacao > div{
+	width: 800px;
+}
+
+.apresentacao > div h2, p {
+	text-align: center;
+} 
 
 .perfil{
 	max-height: 200px;

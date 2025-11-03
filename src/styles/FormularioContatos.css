@@ -21,7 +21,7 @@
   overflow-y: auto;
 }
 #conteudo-do-formulario{
-  width:min-content;
+  width: min-content 50%;
   margin: 5% auto;
 }
 .formulario {
