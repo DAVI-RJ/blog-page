@@ -13,4 +13,4 @@ teste.json
 # git iginore pasta private 
 
 private/
-FormContato.js
+emailForm.js

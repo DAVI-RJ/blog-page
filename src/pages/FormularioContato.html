@@ -3,19 +3,22 @@
     <i class="fa-solid fa-xmark"></i>
   </div>
 <!--#FORMULÁRIO PARA CONTATO-->
-  <form>
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+  <form id="formulario">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
 
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" placeholder="Digite seu email" required>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea name="mensagem" id="mensagem" placeholder="Deixe uma mensagem de crítica ou sugestão"></textarea>
+    <label for="message">Mensagem:</label>
+    <textarea name="message" id="message" placeholder="Deixe uma mensagem" required maxlength="500"></textarea>
+    
+    <button type="submit" value="Send" id="btn">Enviar</button>
 
-    <button type="submit">Enviar</button>
+    <input type="hidden" name="time" value="Mar 10 2025 08:46">
 
-    <div class="error" id="error"></div>
+    <div><p class="sucesso" id="sucesso"></p></div>
+    <div><p class="error" id="error"></p></div>
 
     <div class="contatos">
       <nav>
@@ -28,3 +31,4 @@
     </div>
   </form>
 </div>
+
